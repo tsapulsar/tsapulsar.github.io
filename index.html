@@ -10,8 +10,32 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    
-    <p>h</p>
+    <div id="menu">
+        <a href="https://github.com/tayinde"><img id="github-logo" src="images/github-logo.png" width="40"></a>
+        <a href="https://github.com/tayinde" id="username">TSA thingy</a>
+		<span id="tabs">
+			<a id="first-tab" href="javascript:section('body', false)" class="tab">Home</a>
+            <a href="javascript:section('#experience-section', true)" class="tab">Something</a>
+			<a href="javascript:section('#about-section', true)" class="tab">Something 2</a>
+			<a href="javascript:section('#contact-section', true)" class="tab">Something 3</a>
+		</span>
+		<span id="tabs-m">
+			<a id="first-tab" href="javascript:section('body', false)" class="tab">Home</a>
+            <a href="javascript:section('#experience-section', true)" class="tab">Something</a>
+			<a href="javascript:section('#about-section', true)" class="tab">Something 2</a>
+			<a href="javascript:section('#contact-section', true)" class="tab">Something 3</a>
+		</span>
+		<a id="menu-button" href="javascript:showTabs();">
+			<img src="images/menu-button.png" width="30" />
+		</a>
+	</div>
+    <div id="bg"></div>
+    <h1 id="name">
+        TSA Project<br>
+        <span id="programmer"><div id="laptop"></div>yeah idk what to write here</span>
+    </h1>
+
+    <p></p>
 <script src="universal.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script>

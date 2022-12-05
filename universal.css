@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Antonio:wght@200&display=swap');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand";
+	pointer-events: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+@keyframes move-around {
+	0% {background-position-y: -100px;}
+	17% {background-position-y: -50px; background-position-x: -50px;}
+	33% {background-position-y: -20px; background-position-x: -30px;}
+	50% {background-position-y: -80px; background-position-x: -10px;}
+	67% {background-position-y: -10px; background-position-x: -70px;}
+	83% {background-position-y: -20px; background-position-x: -10px;}
+	100% {background-position-y: -100px; background-position-x: -100px;}
+}
+
+* {
+	scroll-behavior: smooth;
+	transition: 0.3s;
+}
+
+a {
+	pointer-events: all;
+}
+
+.align-center { text-align: center; }
+
+.container {
+	align-items: center;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+.header {
+	font-size: 50px;
+	z-index: 101;
+	color: black;
+	padding: 30px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid rgb(77, 104, 129);;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.margin-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.white {
+	color: whitesmoke;
+}
+
+#tabs-m {
+	display: none;
+	overflow-y: hidden;
+	transition: 0.3s;
+	height: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	.paragraph {
+		width: 90vw !important;
+		font-size: 19px !important;
+	}
+
+	#bg {
+		width: 250% !important;
+		margin-left: -80%;
+	}
+
+	.social-surrounding {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		padding-bottom: 10px !important;
+	}
+
+	.copied {
+		margin-right: auto !important;
+		text-align: center !important;
+		margin-left: auto !important;
+	}
+
+	.social-icon {
+		margin-bottom: -5px;
+	}
+
+	#contact-section {
+		text-align: center !important;
+		height: 300px !important;
+	}
+
+	#menu-button {
+		position: fixed;
+		display: inline !important;
+		right: 20px;
+		width: 30px;
+		top: 30px;
+		pointer-events: all;
+		z-index: 99999;
+	}
+
+	#tabs { display: none; }
+	.tab, #tabs-m { display: block !important; }
+	#tabs-m {line-height: 3; margin-top: 25px;}
+
+	#name {
+		margin-top: 50px;
+		font-size: 50px !important;
+	}
+
+	.container {
+		display: block;
+	}
+
+	#experience-section {
+		height: 1100px !important;
+		padding-top: 70px !important;
+		padding-bottom: 250px !important;
+	}
+
+	#about-section {
+		height: 690px !important;
+		padding-top: 50px !important;
+		padding-bottom: 350px !important;
+	}
+
+	#about-paragraph {
+		margin-left: 0px !important;
+		text-align: center !important;
+	}
+}
