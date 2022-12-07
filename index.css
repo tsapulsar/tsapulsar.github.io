@@ -6,16 +6,17 @@
 
 
 :root {
-    --main: rgb(0, 52, 163);
+    --main: rgb(15, 18, 28);
     --second: rgb(0,52, 163);
 }
 
 body {
-    background: whitesmoke;
+    background: rgb(15, 18, 28);
     padding: 0; 
     margin: 0;
     overflow-x: hidden !important;
     scroll-behavior: smooth;
+	transition:all 10s;
 }
 
 ::-webkit-scrollbar {
@@ -53,9 +54,37 @@ body {
 
 #bg-content {
 	height: 400px;
-	padding-top: 170px;
+	padding-top: 20vh;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+#titleboxes {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#titlebox, #titlebox2 {
+	width: 500px;
+	height: 200px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-top:200px;
+}
+#titlebox {
+	border-top: 3px solid white;
+	border-left: 3px solid white;
+	transition: 0.5s;
+	z-index: 104;
+}
+#titlebox2 {
+	border-bottom: 3px solid white;
+	border-right: 3px solid white;
+	top: 400px;
 }
 
 #title {
@@ -140,7 +169,7 @@ body {
 }
 
 #bg {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 69, 149, 0.6)), url(./images/earth.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(25, 23, 149, 0.6)), url(./images/earth.jpg);
     background-repeat: no-repeat;
     background-size: 110%;
 	margin-top: 100px;
@@ -148,9 +177,9 @@ body {
 	background-position-x: -100px;
 	background-position-y: -100px;
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	animation: move-around;
-    animation-duration: 15s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 	position: relative;
 	z-index: 100;
@@ -159,9 +188,12 @@ body {
 }
 
 #um-hiding-the-gradient-thing {
-	background: whitesmoke;
-	height: 100px;
-	margin-top: -200px;
+	background: rgb(15, 18, 28);
+	height: 275px;
+	margin-top: -310px;
+	width: 130%;
 	position: relative;
 	z-index: 100;
+	transform: rotate(-5deg);
+	box-shadow: inset 0px 4px 7px -3px rgb(66, 63, 255);
 }
