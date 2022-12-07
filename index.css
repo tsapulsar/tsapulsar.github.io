@@ -11,7 +11,7 @@
 }
 
 body {
-    background: rgb(239, 243, 248);
+    background: whitesmoke;
     padding: 0; 
     margin: 0;
     overflow-x: hidden !important;
@@ -51,24 +51,33 @@ body {
     filter: invert();
 }
 
-#name {
-    font-family: "Quicksand";
-	text-align: center;
-	width: 100%;
-	top: 200px;
-	position: absolute;
+#bg-content {
+	height: 400px;
+	padding-top: 170px;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+    font-family: "Poppins";
+	font-weight: 500;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 60px;
+	font-size: 100px;
+	letter-spacing: 25px;
 	z-index: 101;
 	color: rgb(227, 242, 255);
 	pointer-events: none;
 }
 
-#programmer {
+#subtitle {
     font-size: 30px;
-    font-family: "Abel";
+    font-family: "Poppins";
     color: rgb(157, 214, 255);
+	letter-spacing: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: -60px;
 }
 
 #username {
@@ -77,7 +86,6 @@ body {
 	font-size: 18px;
 	text-decoration: none;
 	color: white;
-    font-family: "Abel";
 	transition: 0.2s;
 	display: inline-block;
 	border-bottom: 0px solid transparent;
@@ -132,20 +140,28 @@ body {
 }
 
 #bg {
-    background: url(https://wallpaperaccess.com/full/17520.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 69, 149, 0.6)), url(./images/earth.jpg);
     background-repeat: no-repeat;
-    background-size: 120%;
-    background-position-y: -100px;
-    background-position-x: -100px;
-    animation: move-around;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
+    background-size: 110%;
 	margin-top: 100px;
-	width: 100vw;
-	height: 800px;
 	top: -100px;
+	background-position-x: -100px;
+	background-position-y: -100px;
+	width: 100vw;
+	height: 100vh;
+	animation: move-around;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 	position: relative;
 	z-index: 100;
 	text-align: center;
 	pointer-events: none;
+}
+
+#um-hiding-the-gradient-thing {
+	background: whitesmoke;
+	height: 100px;
+	margin-top: -200px;
+	position: relative;
+	z-index: 100;
 }
