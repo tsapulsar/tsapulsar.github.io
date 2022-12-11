@@ -7,7 +7,7 @@
 
 :root {
     --main: rgb(15, 18, 28);
-    --second: rgb(0,52, 163);
+    --second: rgb(154, 221, 255);
 }
 
 body {
@@ -74,6 +74,7 @@ body {
 	margin-left: 200px;
 	margin-right: 200px;
 	padding-top:200px;
+	
 }
 #titlebox {
 	border-top: 3px solid white;
@@ -85,6 +86,77 @@ body {
 	border-bottom: 3px solid white;
 	border-right: 3px solid white;
 	top: 400px;
+}
+/*
+#buttons {
+	width: 100%;
+	margin-top: 200px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#buttonboxes {
+	width: 130px;
+	height: 30px;
+	position: absolute;
+	color: white;
+	font-family: "Poppins";
+	font-weight: 600;
+	text-align: center;
+	transition: 0.1s;
+}
+#buttonbox, #buttonbox2 {
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+#buttonbox {
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+}
+#buttonbox2 {
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	margin-left: 110px;
+}
+*/
+
+#bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/earth.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+	margin-top: 100px;
+	top: -100px;
+	background-position-x: -100px;
+	background-position-y: -100px;
+	width: 100vw;
+	height: 110vh;
+	animation: move-around;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+	position: relative;
+	z-index: 100;
+	text-align: center;
+	pointer-events: none;
+}
+
+#um-hiding-the-gradient-thing,#um-hiding-the-gradient-thing2 {
+	background: rgb(21, 25, 38);
+	height: 265px;
+	margin-top: -310px;
+	width: 135%;
+	margin-left: -20px;
+	position: relative;
+	z-index: 100;
+	transform: rotate(-5deg);
+	box-shadow: inset 0px 4px 7px -3px rgb(23, 67, 149);
+}
+#um-hiding-the-gradient-thing2 {
+	transform: rotate(5deg);
+	margin-top: -355px;
 }
 
 #title {
@@ -108,6 +180,7 @@ body {
 	text-transform: uppercase;
 	margin-top: -60px;
 }
+
 
 #username {
     margin-left: 10px;
@@ -168,12 +241,13 @@ body {
     border-color: rgb(0, 104, 202);
 }
 
-#bg {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(25, 23, 149, 0.6)), url(./images/earth.jpg);
+
+.contentsection {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(https://wallpapercave.com/wp/wp9250079.jpg);
     background-repeat: no-repeat;
     background-size: 110%;
 	margin-top: 100px;
-	top: -100px;
+	top: -200px;
 	background-position-x: -100px;
 	background-position-y: -100px;
 	width: 100vw;
@@ -182,18 +256,39 @@ body {
     animation-duration: 25s;
     animation-iteration-count: infinite;
 	position: relative;
-	z-index: 100;
-	text-align: center;
+	z-index: 0;
+	text-align: left;
 	pointer-events: none;
 }
-
-#um-hiding-the-gradient-thing {
-	background: rgb(15, 18, 28);
-	height: 275px;
-	margin-top: -310px;
-	width: 130%;
-	position: relative;
-	z-index: 100;
-	transform: rotate(-5deg);
-	box-shadow: inset 0px 4px 7px -3px rgb(66, 63, 255);
+.contentfull {
+	display: flex;
+	padding-top: 200px;
+	padding-left: 400px;
+	align-items: center;
 }
+.contentcontent {
+	width: 600px;
+}
+.contentheader {
+	color: var(--second);
+	font-family: "Poppins";
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+.contenttext {
+	color: whitesmoke;
+	font-size: 20px;
+	line-height: 35px;
+	font-family: "Poppins";
+}
+.contentimage {
+	background: url(https://spaceandbeyondbox.com/wp-content/uploads/2020/02/Image-1.jpg);
+	width: 400px;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	margin-left: 150px;
+	
+}
+
