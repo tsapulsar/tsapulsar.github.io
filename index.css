@@ -135,7 +135,7 @@ body {
 	width: 100vw;
 	height: 110vh;
 	animation: move-around;
-    animation-duration: 25s;
+    animation-duration: 35s;
     animation-iteration-count: infinite;
 	position: relative;
 	z-index: 100;
@@ -255,7 +255,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	animation: move-around;
-    animation-duration: 25s;
+    animation-duration: 35s;
     animation-iteration-count: infinite;
 	position: relative;
 	z-index: 0;
