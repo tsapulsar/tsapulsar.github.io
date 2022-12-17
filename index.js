@@ -2,8 +2,11 @@ setInterval(function () {
     if (window.scrollY <= 500) {
         document.getElementById("titlebox").style = "height: 200px"; 
     }
-    else {
-        document.getElementById("titlebox").style = "height: 2500px"; 
+    if (window.scrollY>= 500 && window.scrollY <=1750) {
+        document.getElementById("titlebox").style = "height: 275vh"; 
+    }
+    if (window.scrollY>= 1750) {
+        document.getElementById("titlebox").style = "height: 525vh"; 
     }
 }, 10)
 

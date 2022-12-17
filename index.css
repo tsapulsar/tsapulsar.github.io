@@ -71,8 +71,8 @@ body {
 #titlebox, #titlebox2 {
 	width: 500px;
 	height: 200px;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 10vw;
+	margin-right: 10vw;
 	padding-top:200px;
 	
 }
@@ -143,7 +143,7 @@ body {
 	pointer-events: none;
 }
 
-#um-hiding-the-gradient-thing,#um-hiding-the-gradient-thing2 {
+#slant,#slant2, #slant3 {
 	background: rgb(21, 25, 38);
 	height: 265px;
 	margin-top: -310px;
@@ -154,14 +154,17 @@ body {
 	transform: rotate(-5deg);
 	box-shadow: inset 0px 4px 7px -3px rgb(23, 67, 149);
 }
-#um-hiding-the-gradient-thing2 {
+#slant2 {
 	transform: rotate(5deg);
 	margin-top: -355px;
+}
+#slant3 {
+	margin-top: -400px;
 }
 
 #title {
     font-family: "Poppins";
-	font-weight: 500;
+	font-weight: 600;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 100px;
@@ -243,7 +246,6 @@ body {
 
 
 .contentsection {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(https://wallpapercave.com/wp/wp9250079.jpg);
     background-repeat: no-repeat;
     background-size: 110%;
 	margin-top: 100px;
@@ -251,7 +253,7 @@ body {
 	background-position-x: -100px;
 	background-position-y: -100px;
 	width: 100vw;
-	height: 110vh;
+	height: 100vh;
 	animation: move-around;
     animation-duration: 25s;
     animation-iteration-count: infinite;
@@ -259,36 +261,69 @@ body {
 	z-index: 0;
 	text-align: left;
 	pointer-events: none;
+	padding-top: 200px;
+	padding-left: 20VW;
+	background-size:cover;
+}
+#sec1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(https://wallpapercave.com/wp/wp9250079.jpg);
+}
+#sec2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(https://wallpaperaccess.com/full/39608.jpg);
 }
 .contentfull {
 	display: flex;
-	padding-top: 200px;
-	padding-left: 400px;
 	align-items: center;
 }
 .contentcontent {
-	width: 600px;
+	width: 35vw;
 }
 .contentheader {
 	color: var(--second);
 	font-family: "Poppins";
 	font-weight: 700;
-	font-size: 40px;
-	letter-spacing: 2px;
+	font-size: 7vw;
+	line-height: 120px;
 }
 .contenttext {
+	margin-top: -100px;
 	color: whitesmoke;
 	font-size: 20px;
 	line-height: 35px;
 	font-family: "Poppins";
 }
-.contentimage {
-	background: url(https://spaceandbeyondbox.com/wp-content/uploads/2020/02/Image-1.jpg);
-	width: 400px;
-	height: 500px;
-	background-size: cover;
-	background-position: center;
-	margin-left: 150px;
-	
-}
 
+.contentbuttonbg {
+	margin-top: 7vw;
+	margin-left: 10vw;
+	background: var(--second);
+	height: 175px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 175px;
+	border-radius: 100%;
+}
+.contentbutton {
+	color: white;
+	font-size: 700px;
+	text-decoration: none;
+	font-family: "Poppins";
+	font-weight: 600;
+	line-height: 300px;
+}
+.contentbuttontext {
+	font-family: "Poppins";
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	margin-left: -100px;
+
+}
+.contentbuttonbg:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 89, 167, 0.6)), url(./images/earth.jpg);
+	background-size:cover;
+	background-position: top;
+	transform: scale(1.1);
+}
