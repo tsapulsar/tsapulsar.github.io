@@ -6,7 +6,7 @@ setInterval(function () {
         document.getElementById("titlebox").style = "height: 275vh"; 
     }
     if (window.scrollY>= 1750 && window.scrollY <=3000) {
-        document.getElementById("titlebox").style = "height: 525vh"; 
+        document.getElementById("titlebox").style = "height: 620vh"; 
     }
 
 }, 10)
