@@ -30,8 +30,6 @@ body {
 }
 
 
-/* dont change anything below here for now*/
-
 #menu {
 	position: fixed;
 	margin-top: 0px;
@@ -87,42 +85,7 @@ body {
 	border-right: 3px solid white;
 	top: 400px;
 }
-/*
-#buttons {
-	width: 100%;
-	margin-top: 200px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
-#buttonboxes {
-	width: 130px;
-	height: 30px;
-	position: absolute;
-	color: white;
-	font-family: "Poppins";
-	font-weight: 600;
-	text-align: center;
-	transition: 0.1s;
-}
-#buttonbox, #buttonbox2 {
-	width: 20px;
-	height: 20px;
-	margin-top: -10px;
-	margin-bottom: -10px;
-}
-#buttonbox {
-	border-top: 2px solid white;
-	border-left: 2px solid white;
-}
-#buttonbox2 {
-	border-bottom: 2px solid white;
-	border-right: 2px solid white;
-	margin-left: 110px;
-}
-*/
 
 #bg {
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/earth.jpg);
@@ -154,7 +117,7 @@ body {
 	transform: rotate(0deg);
 }
 #slant2 {
-	margin-top: -100px;
+	margin-top: -200px;
 }
 
 #title {
@@ -273,13 +236,19 @@ body {
 .contentcontent {
 	width: 35vw;
 }
-.contentheader {
+.contentheader, .contentheader2 {
 	color: var(--second);
 	font-family: "Poppins";
 	font-weight: 700;
 	font-size: 7vw;
 	line-height: 120px;
 }
+.contentheader2 {
+	margin-top: 100px;
+	font-size: 3vw;
+	line-height: 75px;
+}
+
 .contenttext {
 	margin-top: -100px;
 	color: whitesmoke;
@@ -353,6 +322,10 @@ body {
 	color: var(--second);
 	font-weight: 700;
 }
+.contentheader2 {
+	margin-top: 200px;
+	font-size: 80px;
+}
 .contentcontent1 {
 	width: 65%;
 	margin-top: -150px;
@@ -385,4 +358,24 @@ body {
 	font-size: 200px;
 	line-height: 0px;
 }
+#contentheader2-1 {
+	font-size: 100px;
+}
+#contentvehicles {
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 200px;
+}
 
+#contentvehicle {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+#vehiclepic {
+	background: linear-gradient(rgba(0, 43, 161, 0.2), var(--main)), url(./images/earth.jpg);
+	width: 200px;
+	height: 300px;
+}
