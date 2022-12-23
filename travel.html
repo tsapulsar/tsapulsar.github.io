@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pulsar - Home</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="travel.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <div id="menu">
+        <a href="https://github.com/tayinde"><img id="github-logo" src="images/github-logo.png" width="40"></a>
+        <a href="https://github.com/tayinde" id="username">PULSAR</a>
+		<span id="tabs">
+			<a id="first-tab" href="./index.html" class="tab">Home</a>
+            <a href="./about.html" class="tab">About</a>
+			<a href="./travel.html" class="tab">Travel</a>
+			<a href="javascript:section('#contact-section', true)" class="tab">Safety</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Vehicles</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Visit</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
+		</span>
+		<span id="tabs-m">
+			<a id="first-tab" href="javascript:section('body', false)" class="tab">Home</a>
+            <a href="javascript:section('#experience-section', true)" class="tab">About</a>
+			<a href="javascript:section('#about-section', true)" class="tab">Travel</a>
+			<a href="javascript:section('#contact-section', true)" class="tab">Safety</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Vehicles</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Visit</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
+		</span>
+		<a id="menu-button" href="javascript:showTabs();">
+			<img src="images/menu-button.png" width="30" />
+		</a>
+	</div>
+
+    <div id="back">
+        <p id="title">Travel</p>
+        <p id="sub">Rewriting the limits of what is capable in the space tourism industry.</p>
+    </div>
+
+    <div id="section">
+        <p id="header" data-aos="fade-up">Destinations</p>
+        <div id="planet">
+            <img id="planetimage" data-aos="zoom-in" src="./images/agenon.png"></img>
+            <div id="planetinfo">
+                <p id="planetheader" data-aos="fade-up-right">Agenon-901</p>
+                <p id="planettext" data-aos="fade-up-left">Nestled among the stars in a distant corner of the far galaxy is the lush, verdant planet of Agenon-901. It is a planet of rolling green hills and towering mountain ranges, all teeming with a diverse array of plant life unlike anything Earth exhibits. </p>
+            </div>
+        </div>
+        <div id="planet">
+            <img id="planetimage" data-aos="zoom-in" src="./images/bizzario.png"></img>
+            <div id="planetinfo">
+                <p id="planetheader" data-aos="fade-up-right">Bizzario</p>
+                <p id="planettext" data-aos="fade-up-left">ocated in the far reaches of the observable universe, Bizarrio hosts a wondrous display of white aura lights surrounding its atmosphere, making for a phenomenal light show.</p>
+            </div>
+        </div>
+        <div id="planet">
+            <img id="planetimage" data-aos="zoom-in" src="./images/terran.png"></img>
+            <div id="planetinfo">
+                <p id="planetheader" data-aos="fade-up-right">Terran-57</p>
+                <p id="planettext" data-aos="fade-up-left">Terran-57 is an aquatic planet, with the surface consisting almost entirely of water. The strange orbital patterns of the planet cause enormous waves, whirlpools, tornadoes, and much more to form on the surface, a truly wondrous sight to see.</p>
+            </div>
+        </div>
+        <div id="planet">
+            <img id="planetimage" data-aos="zoom-in" src="./images/Dramangode.png"></img>
+            <div id="planetinfo">
+                <p id="planetheader" data-aos="fade-up-right">Dramangode</p>
+                <p id="planettext" data-aos="fade-up-left">This is a moon home to a current mining operation of NASA of valuable ore, pyrostilanium, which is currently being experimented on for fascinating uses. </p>
+            </div>
+        </div>
+        <div id="planet">
+            <img id="planetimage" data-aos="zoom-in" src="./images/Vanichor.png"></img>
+            <div id="planetinfo">
+                <p id="planetheader" data-aos="fade-up-right">Vanichor</p>
+                <p id="planettext" data-aos="fade-up-left">Vanichor is a barren, desolate planet located in the outer reaches of the galaxy. It is covered in vast deserts of red sand and rocky cliffs, with no vegetation or animal life to be found. The planet's surface is scarred with the remains of ancient civilizations and ruins, hinting at a history of habitation long since abandoned.</p>
+            </div>
+        </div>
+    </div>
+    <p id="disclaimer" data-aos="zoom-in-down">You may encounter some fascinating space phenomena on the way, from black holes to supernovas.</p>
+    
+    <div id="section">
+        <p id="header">Ticket Pricing</p>
+        <div id="choices">
+            <div id="choice">
+                <p id="price">$475</p>
+                <p id="details">Choice of one trip to Dramangode</p>
+                <button id="book">Book</button>
+            </div>
+            <div id="choice">
+                <p id="price">$556</p>
+                <p id="details">Choice of one trip to Vanichor or Terran-57</p>
+                <button id="book1">Book</button>
+            </div>
+            <div id="choice">
+                <p id="price">$612</p>
+                <p id="details">Choice of one trip to Agenon-901 or Bizzario </p>
+                <button id="book2">Book</button>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="universal.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="travel.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+    AOS.init()
+</script>
+</body>
+</html>

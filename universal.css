@@ -172,6 +172,26 @@ a {
 }
 
 
+#title {
+    border-bottom: 4px solid var(--second);
+    border-left: 4px solid var(--second);
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#sub {
+    color: white;
+    font-size: 20px;
+    margin-top: -70px;
+}
+
+
 @media only screen and (max-width: 600px) {
 	body::-webkit-scrollbar {
 		display: none;
