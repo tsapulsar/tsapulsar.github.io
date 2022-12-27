@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pulsar - Home</title>
+    <link rel='icon' href="./images/logo.png">
+    <link rel = "stylesheet" href="universal.css">
+    <link rel = "stylesheet" href="safety.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <div id="menu">
+        <a href="https://github.com/tayinde"><img id="github-logo" src="images/github-logo.png" width="40"></a>
+        <a href="https://github.com/tayinde" id="username">PULSAR</a>
+		<span id="tabs">
+			<a id="first-tab" href="./index.html" class="tab">Home</a>
+            <a href="./about.html" class="tab">About</a>
+			<a href="./travel.html" class="tab">Travel</a>
+			<a href="./safety.html" class="tab">Safety</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Vehicles</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Visit</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
+		</span>
+		<span id="tabs-m">
+			<a id="first-tab" href="javascript:section('body', false)" class="tab">Home</a>
+            <a href="javascript:section('#experience-section', true)" class="tab">About</a>
+			<a href="javascript:section('#about-section', true)" class="tab">Travel</a>
+			<a href="./safety.html" class="tab">Safety</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Vehicles</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Visit</a>
+            <a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
+		</span>
+		<a id="menu-button" href="javascript:showTabs();">
+			<img src="images/menu-button.png" width="30" />
+		</a>
+	</div>
+
+    <div id="back">
+        <p id="title">Safety</p>
+        <p id="sub">Our number one priority.</p>
+    </div>
+
+    <p id="disclaimer" data-aos="fade-up">We are so excited to have you onboard with us at Pulsar! Please read this page carefully to understand our procedures for ensuring the safest possible experience for you. </p>
+    <div id="section">
+        <p id="header" data-aos="fade-up">Before your trip</p>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right">1</p>
+            <p id="text">Please review all of the materials provided to you in your pre-trip packet, including the emergency procedures, trip instructions, and safety guidelines. This is imperative for ensuring YOUR safety. Sign off on the agreements page and hand it to the flight coordinator before boarding.</p>
+        </div>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right">2</p>
+            <p id="text">Make sure you are in healthy physical condition. If you have any preexisting medical conditions, please let us know in advance and mark it when you sign up.</p>
+        </div>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right">3</p>
+            <p id="text">Follow the packing list provided to you in advance and make sure you have all of the necessary items for your trip.</p>
+        </div>
+    </div>
+
+    <div id="section">
+        <p id="header" data-aos="fade-up">During your trip</p>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right">1</p>
+            <p id="text">Follow all instructions and guidelines provided by our trained professionals.</p>
+        </div>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right">2</p>
+            <p id="text">Stay within designated areas and do not tamper with equipment.</p>
+        </div>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right">3</p>
+            <p id="text">If you experience any unusual symptoms or discomfort, alert a team member immediately.</p>
+        </div>
+    </div>
+
+    <div id="section">
+        <p id="header"  data-aos="fade-up" style="color: #ff7d7d;">Emergency protocols</p>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right" style="color: #ff7d7d;">1</p>
+            <p id="text">Stay calm and follow the instructions provided by our trained space travel professionals.</p>
+        </div>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right" style="color: #ff7d7d;">2</p>
+            <p id="text">Familiarize yourself with the location of the emergency exits and the emergency procedures.</p>
+        </div>
+        <div id="listing">
+            <p id="num" data-aos="fade-up-right" style="color: #ff7d7d;">3</p>
+            <p id="text">If an evacuation is necessary, follow the evacuation procedures and move quickly but calmly to the nearest exit. From there, a team member will lead you to the evacuation pod. </p>
+        </div>
+    </div>
+
+<script src="universal.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+    AOS.init()
+</script>
+</body>
+</html>
