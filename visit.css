@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(rgb(11, 21, 52), var(--main)), url();
+    pointer-events:all;
+}
+
+#back {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/building.jpg);
+    height: 500px;
+    margin-top: -30px;
+    background-position: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#disclaimer {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+#header {
+    font-size: 70px;
+    color: var(--second);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+#text {
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+}
+#secimg1, #secimg2, #secimg3, #secimg4 {
+    background: url(./images/park.jpg);
+    width: 1000px;
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#secimg2 {
+    background: url(./images/museum.jpg);
+    background-size: cover;
+    background-position: center left;
+}
+
+#secimg3 {
+    background: url(./images/theater.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#secimg4 {
+    background: url(./images/foodcourt.jpg);
+    background-size: cover;
+    background-position: center;
+}
