@@ -1,0 +1,253 @@
+
+#bg {
+    margin-top: -17px;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/earth.jpg);
+    background-size: cover;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+#bgtitle {
+    color: white;
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+#subtitle {
+    color: var(--second);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -120px;
+    letter-spacing: 6px;
+}
+#boxes {
+    position: absolute;
+    top: 200px;
+}
+#box1, #box2 {
+    width: 100px;
+    height: 150px;
+}
+#box1 {
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    margin-right: 600px;
+}
+#box2 {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    margin-top: 00px;
+    margin-left: 600px;
+}
+
+#divider {
+    height: 150px;
+}
+
+.mainsection {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#b1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/about.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#b2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/safety.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#b3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/building.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#left, #right {
+    width: 500px;
+    height: 670px;
+    padding-bottom: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#left {
+    padding-left: 200px;
+    border-left: 3px solid white;
+}
+#right {
+    height: 400px;
+    padding-left: 100px;
+    width: 300px;
+    padding-right: 100px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+
+#header, #travelheader {
+    font-size: 120px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--second);
+}
+#travelheader {
+    transform: rotate(270deg);
+    width: 450px;
+    margin-left: -100px;
+}
+
+#sectext {
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: -80px;
+}
+#secbutton {
+    font-size: 600px;
+    color: white;
+    font-weight: 600;
+    margin-top: -175px;
+    margin-left: -40px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+#secbutton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: var(--second);
+}
+#buttonsub {
+    font-size:30px;
+    text-transform: uppercase;
+    color: var(--second);
+    font-weight: 600;
+    margin-top: -300px;
+}
+
+#travelsec {
+    background: linear-gradient(rgba(21, 55, 120, 0.3), var(--main)), url();
+    height: 900px;
+}
+
+#travelinfo {
+    width: 800px;
+    height: 450px;
+    margin-left: -150px;
+}
+#travelimg {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 67, 149, 0.3)), url(./images/travel.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 800px;
+    height: 150px;
+}
+#traveltext {
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+}
+#option,#option1 {
+    display: flex;
+    align-items: center;
+    color: var(--second);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 100px;
+    text-decoration: none;
+}
+
+#option1 {
+    color: var(--second);
+    margin-top: -15px;
+    transition: 0.2s;
+}
+#option1:hover {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#option {
+    margin-top: -10px;
+    transition: 0.2s;
+}
+#option:hover {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+#arrow {
+    color: white;
+    margin-right: 10px;
+}
+
+#vehiclesec {
+    background: linear-gradient(rgba(21, 55, 120, 0.3), var(--main)), url();
+    flex-direction: column;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 880px;
+}
+
+#vehicleheader {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--second);
+    font-weight: 700;
+}
+
+#avaton {
+    display: inline-block;
+    background: url(./images/avaton.png);
+    filter: brightness(130%);
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 600px;
+    background-size: cover;
+}
+
+#vehiclename {
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#vehiclebutton {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 100px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#vehiclebutton:hover {
+    margin-left: 20px;
+    color: var(--second);
+    cursor: pointer;
+}
+
+
+
+
