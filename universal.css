@@ -41,12 +41,19 @@ body {
 	margin-top: 0px;
 	height: 60px;
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
 	top: 0;
 	left: 0;
 	z-index: 99999;
-	background-color: transparent;
 	transition: 0.5s;
+}
+#menucontent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #github-logo {
@@ -57,26 +64,33 @@ body {
 }
 
 #username {
-    margin-left: 10px;
+    margin-left: 40px;
 	margin-top: 5px;
-	font-size: 18px;
+	font-size: 25px;
 	text-decoration: none;
 	color: white;
 	transition: 0.2s;
+	color: var(--second);
 	display: inline-block;
 	border-bottom: 0px solid transparent;
 	border-width: 1px;
 	pointer-events: all;
+	font-weight: 700;
+	letter-spacing: 5px;
+	margin-right: 20px;
+}
+#menubutton {
+	display: none;
 }
 
 #username:hover {
-    color: grey;;
+    color: white;
 }
 
 #menu-button {
+	background: transparent;
     filter: invert();
 	pointer-events: all;
-	display: none;
 }
 
 #logo {
@@ -89,59 +103,23 @@ body {
 #first-tab {
 	margin-left: 20px;
 }
-.tab {
+.menu-link {
 	margin-left: 20px;
 	margin-top: 5px;
 	font-size: 18px;
 	text-decoration: none;
 	color: white;
-	transition: 0.2s;
+	transition: 0.1s;
 	display: inline-block;
-	border-bottom: 0px solid transparent;
-	border-width: 1px;
+	border-bottom: 1px solid transparent;
 	pointer-events: all;
 }
 
-.tab:hover {
-	color: turquoise;
-	border-bottom: 1px solid turquoise;
-}
-.border-light-blue {
-    border-color: rgb(103, 181, 255);
+.menu-link:hover {
+	color: var(--second);
+	border-bottom: 1px solid var(--second);
 }
 
-.border-darkish-blue {
-    border-color: rgb(0, 104, 202);
-}
-
-@keyframes move-around {
-	0% {background-position-y: -100px;}
-	17% {background-position-y: -50px; background-position-x: -50px;}
-	33% {background-position-y: -20px; background-position-x: -30px;}
-	50% {background-position-y: -80px; background-position-x: -10px;}
-	67% {background-position-y: -10px; background-position-x: -70px;}
-	83% {background-position-y: -20px; background-position-x: -10px;}
-	100% {background-position-y: -100px; background-position-x: -100px;}
-}
-
-* {
-	scroll-behavior: smooth;
-	transition: 0.3s;
-}
-
-a {
-	pointer-events: all;
-}
-
-.align-center { text-align: center; }
-
-.container {
-	align-items: center;
-	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-}
 
 .header {
 	font-size: 50px;
@@ -153,23 +131,6 @@ a {
 	width: -moz-fit-content;
 	width: fit-content;
 }
-
-.margin-auto {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.white {
-	color: whitesmoke;
-}
-
-#tabs-m {
-	display: none;
-	overflow-y: hidden;
-	transition: 0.3s;
-	height: 0;
-}
-
 
 #title {
     border-bottom: 4px solid var(--second);
@@ -252,79 +213,60 @@ a {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-	body::-webkit-scrollbar {
-		display: none;
-	}
+@media only screen and (max-width: 1024px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    #menu {
+        height: 170px;
+        width: 100vw;
+        display: block;
+        transition: 0.3s;
+        overflow: hidden;
+        padding-top: 50px;
+		background: var(--main);
+    }
+    #menucontent {
+        display: flex;
+    }
+    #menubutton {
+		background: transparent;
+		color: white;
+		font-size: 100px;
+		transform: rotate(90deg);
+		display:block;
+		font-weight: 800;
+        filter: opacity(100%);
+        width: 150px;
+        height: 150px;
+        margin-left: 35vw;
+        cursor: pointer;
+        border: none;
+        outline: none;
+		transition: 0.2s;
+    }
 
-	.paragraph {
-		width: 90vw !important;
-		font-size: 19px !important;
-	}
+    #username {
+        font-size: 60px;
+        padding-left: 0px;
+    }
+    #tabs {
+        display: block;
+        text-align: center;
+        width: 100vw;
+        position: absolute;
+        margin-left: 0px;
+    }
+    #tabs a, #menu-contact {
+        display: inline-block;
+        font-size: 40px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 30px;
 
-	#bg {
-		width: 250% !important;
-		margin-left: -80%;
-	}
-
-	.social-surrounding {
-		margin-left: auto !important;
-		margin-right: auto !important;
-		padding-bottom: 10px !important;
-	}
-
-	.copied {
-		margin-right: auto !important;
-		text-align: center !important;
-		margin-left: auto !important;
-	}
-
-	.social-icon {
-		margin-bottom: -5px;
-	}
-
-	#contact-section {
-		text-align: center !important;
-		height: 300px !important;
-	}
-
-	#menu-button {
-		position: fixed;
-		display: inline !important;
-		right: 20px;
-		width: 30px;
-		top: 30px;
-		pointer-events: all;
-		z-index: 99999;
-	}
-
-	#tabs { display: none; }
-	.tab, #tabs-m { display: block !important; }
-	#tabs-m {line-height: 3; margin-top: 25px;}
-
-	#name {
-		margin-top: 50px;
-		font-size: 50px !important;
-	}
-
-	.container {
-		display: block;
-	}
-
-	#experience-section {
-		height: 1100px !important;
-		padding-top: 70px !important;
-		padding-bottom: 250px !important;
-	}
-
-	#about-section {
-		height: 690px !important;
-		padding-top: 50px !important;
-		padding-bottom: 350px !important;
-	}
-
-	#about-paragraph {
-		margin-left: 0px !important;
-		text-align: center !important;
-	}
+    }
 }

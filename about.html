@@ -11,71 +11,78 @@
 </head>
 <body data-aos="none" data-aos-duration="10">
     <div id="menu">
-        <a href="https://github.com/tayinde"><img id="github-logo" src="images/github-logo.png" width="40"></a>
-        <a href="https://github.com/tayinde" id="username">PULSAR</a>
-		<span id="tabs">
-			<a id="first-tab" href="./index.html" class="tab">Home</a>
-            <a href="./about.html" class="tab">About</a>
-			<a href="./travel.html" class="tab">Travel</a>
-			<a href="./safety.html" class="tab">Safety</a>
-            <a href="./vehicles.html" class="tab">Vehicles</a>
-            <a href="./visit.html" class="tab">Visit</a>
-            <a href="./references.html" class="tab">References</a>
-            <a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
-		</span>
-		<span id="tabs-m">
-			<a id="first-tab" href="./index.html" class="tab">Home</a>
-            <a href="./about.html" class="tab">About</a>
-			<a href="./travel.html" class="tab">Travel</a>
-			<a href="./safety.html" class="tab">Safety</a>
-            <a href="./vehicles.html" class="tab">Vehicles</a>
-            <a href="./visit.html" class="tab">Visit</a>
-            <a href="./references.html" class="tab">References</a>
-            <a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
-		</span>
-		<a id="menu-button" href="javascript:showTabs();">
-			<img src="images/menu-button.png" width="30" />
-		</a>
-	</div>
+        <div id="menucontent">
+            <p><a href="./index.html" id="username">PULSAR</a></p>
+            <button id="menubutton" onclick="openmenu()">></button>
+        </div>
+        <div id="tabs">
+            <a href="./index.html" class="menu-link">Home</a>
+            <a href="./about.html" class="menu-link">About</a>
+			<a href="./travel.html" class="menu-link">Travel</a>
+			<a href="./safety.html" class="menu-link">Safety</a>
+            <a href="./vehicles.html" class="menu-link">Vehicles</a>
+            <a href="./visit.html" class="menu-link">Visit</a>
+            <a href="./references.html" class="menu-link">References</a>
+            <a class="menu-link" id="contactlink">Contact</a>
+        </div>
+    </div>
 
     <div id="back">
         <p id="title">About Us</p>
         <p id="sub">Rewriting the limits of what is capable in the space tourism industry.</p>
     </div>
-    <div id="section1">
-        <p id="header">About</p>
-        <p id="sectiontext" data-aos="fade-up-left">Pulsar is a space tourism company that specializes in providing out-of-this-world experiences to individuals looking to explore the final frontier and experience the wonders of space first-hand.</p>
-    </div>
-    <div id="section">
-        <p id="header">History</p>
-        <p id="sectiontext" data-aos="fade-up-left">In the year 2040, a group of ambitious scientists and engineers founded the space exploration and tourism company, Pulsar. They were driven by a desire to push the boundaries of human understanding, expand our presence in the universe, and revolutionize space travel to be accessible for the common citizen. Vision soon turned into reality, and Pulsar today is now regarded as the leading innovator and forefront of space travel, known for its superb commitment to safety, education, and providing unforgettable experiences.</p>
-    </div>
-    <div id="timeline">
-        <div id="line"></div>
-        <div id="info">
-            <div id="event">
-                <p id="date">> <span style="color: white">2040</span></p>
-                <p id="eventtext">Pulsar was founded.</p>
-            </div>
-            <div id="event">
-                <p id="date">> <span style="color: white">2042</span></p>
-                <p id="eventtext">PULSAR launched its first passenger to the planet now known as Terran-57.</p>
-            </div>
-            <div id="event">
-                <p id="date">> <span style="color: white">2043</span></p>
-                <p id="eventtext">PULSAR partners with Avaton to help develop the most advanced spacecraft humankind has witnessed.</p>
-            </div>
-            <div id="event">
-                <p id="date">> <span style="color: white">2046</span></p>
-                <p id="eventtext">PULSAR and Avaton launch the Avaton Shuttle Mark IV, the first spacecraft to allow humans to travel at the speed of light.</p>
-            </div>
-            <div id="event">
-                <p id="date">> <span style="color: white">2048</span></p>
-                <p id="eventtext">PULSAR surpasses YORABON as the most popular touring destination, generating an operating income of almost $700,000,000.</p>
-            </div>
 
+    <div id="all">
+        <div id="lines" data-aos="fade-up">
+            <div class = "balls" id="ball" data-aos="fade-up"></div>
+            <div class = "balls"  id="ball2" data-aos="fade-up"></div>
+            <div class = "balls"  id="ball3" data-aos="fade-up"></div>
+            <div class = "balls"  id="ball4" data-aos="fade-up"></div>
+            <div class = "balls"  id="ball5" data-aos="fade-up"></div>
+            <div class = "balls"  id="ball6" data-aos="fade-up"></div>
+            <div class = "balls"  id="ball7" data-aos="fade-up"></div>
         </div>
+        <div id="rest">
+            <div id="section1">
+                <p id="header" data-aos="fade-down-right">What We Do</p>
+                <p id="sectiontext" data-aos="fade-up-left">Pulsar is a space tourism company that specializes in providing out-of-this-world experiences to individuals looking to explore the final frontier and experience the wonders of space first-hand.</p>
+            </div>
+        
+        
+            <div id="section">
+                <p id="header" data-aos="fade-down-right">History</p>
+                <p id="sectiontext" data-aos="fade-up-left">In the year 2040, a group of ambitious scientists and engineers founded the space exploration and tourism company, Pulsar. They were driven by a desire to push the boundaries of human understanding, expand our presence in the universe, and revolutionize space travel to be accessible for the common citizen. Vision soon turned into reality, and Pulsar today is now regarded as the leading innovator and forefront of space travel, known for its superb commitment to safety, education, and providing unforgettable experiences.</p>
+            </div>
+            <div id="timeline">
+                
+                <div id="info">
+                    <div id="event">
+                        <p id="date" data-aos="fade-up">2040</p>
+                        <p id="eventtext" data-aos="fade-up-left">Pulsar was founded.</p>
+                    </div>
+                    <div id="event">
+                        <p id="date" data-aos="fade-up">2042</p>
+                        <p id="eventtext" data-aos="fade-up-left">PULSAR launched its first passenger to the planet now known as Terran-57.</p>
+                    </div>
+                    <div id="event">
+                        <p id="date" data-aos="fade-up">2043</p>
+                        <p id="eventtext" data-aos="fade-up-left">PULSAR partners with Avaton to help develop the most advanced spacecraft humankind has witnessed.</p>
+                    </div>
+                    <div id="event">
+                        <p id="date" data-aos="fade-up">2046</p>
+                        <p id="eventtext" data-aos="fade-up-left">PULSAR and Avaton launch the Avaton Shuttle Mark IV, the first spacecraft to allow humans to travel at the speed of light.</p>
+                    </div>
+                    <div id="event">
+                        <p id="date" data-aos="fade-up">2048</p>
+                        <p id="eventtext" data-aos="fade-up-left">PULSAR surpasses YORABON as the most popular touring destination, generating a profit of almost $1.7B.</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
     </div>
+    
     
     <div id="contact">
         <div class="contactdetails">

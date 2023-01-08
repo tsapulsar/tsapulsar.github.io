@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(rgb(12, 26, 70), var(--main)), url();
+}
+
+#back {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/vehicles.jpg);
+    height: 500px;
+    margin-top: -30px;
+    background-position:40%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#section, #section2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section2 {
+    margin-top: 100px;
+}
+
+#header {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 20px;
+    text-align: center;
+    color: var(--second);
+    width: 900px;
+}
+
+#subheader {
+    text-align: center;
+    font-family: "Poppins";
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+#shipimage {
+    margin-top: 50px;
+    width: 840px;
+    height: 440px;
+}
+#shipimage2 {
+    margin-top: 50px;
+    width: 640px;
+    height: auto;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectiontext, #sectiontext1 {
+    font-family: "Poppins";
+    font-size: 20px;
+    color: var(--second);
+    text-transform: capitalize;
+}
+#left {
+    text-align: right;
+}
+#left, #right {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 500px;
+}
+
+#nums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#numssec {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 150px;
+    border-left: 3px solid rgb(74, 89, 116);
+    border-right: 3px solid rgb(74, 89, 116);
+    font-family: "Poppins";
+    color: var(--second);
+    font-size: 50px;
+    padding-bottom: 50px;
+    font-weight: 600;
+}
+#labels {
+    color: white;
+    font-size: 20px;
+    margin-top: -50px;
+    text-transform: uppercase;
+    font-weight: normal;
+}

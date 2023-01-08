@@ -11,34 +11,82 @@ body {
     text-align: center;
 }
 
-#section, #section1 {
+#all {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 350px;
+
 }
-#section1 {
+.balls {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    border: 10px solid white;
+    background: var(--second);
+}
+#ball {
+    margin-top: 125px;
+}
+#ball2 {
+    margin-top: 475px;
+}
+#ball3 {
+    margin-top: 545px;
+}
+#ball4 {
+    margin-top: 125px;
+}
+#ball5 {
+    margin-top: 125px;
+}
+#ball6 {
+    margin-top: 125px;
+}
+#ball7 {
+    margin-top: 130px;
+}
+
+#lines {
+    margin-top: 100px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1950px;
+    width: 6px;
+    background: var(--second);
+}
+
+#section, #section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
 }
 
+
 #header {
     font-size: 70px;
+    padding-top: 20px;
     text-transform: uppercase;
     font-weight: 700;
-    width: 350px;
-    text-align: right;
-    color: var(--second);
-    transform: rotate(270deg);
+    border-top: 6px solid var(--second);
+    border-left: 6px solid var(--second);
+    color: white;
+    width: 900px;
+    text-align: center;
 }
 #sectiontext {
-    margin-left: -150px;
     font-size: 20px;
     color: white;
     width: 800px;
-    margin-right: 200px;
     padding-left: 50px;
-    height: 300px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     line-height: 40px;
+    margin-top: -50px;
+    border-bottom: 6px solid var(--second);
+    border-right: 6px solid var(--second);
 }
 
 #timeline {
@@ -61,15 +109,18 @@ body {
     text-transform: uppercase;
     color: var(--second);
     font-weight: 600;
+    margin-left: 30px;
     width: 1000px;
+    margin-top: -85px;
     display: flex;
 }
 #date {
     display: flex;
-    font-size: 40px;
+    font-size: 70px;
+    color: white;
 }
 
 #eventtext {
     margin-left: 20px;
-    margin-top: 45px;
+    margin-top: 85px;
 }
