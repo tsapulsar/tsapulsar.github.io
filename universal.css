@@ -80,6 +80,7 @@ body {
 	margin-right: 20px;
 }
 #menubutton {
+    font-family: "Poppins";
 	display: none;
 }
 
@@ -224,7 +225,7 @@ body {
         transition: 0.3s;
         overflow: hidden;
         padding-top: 50px;
-		background: var(--main);
+		background: rgb(31, 40, 65);
     }
     #menucontent {
         display: flex;
@@ -235,7 +236,7 @@ body {
 		font-size: 100px;
 		transform: rotate(90deg);
 		display:block;
-		font-weight: 800;
+		font-weight: 700;
         filter: opacity(100%);
         width: 150px;
         height: 150px;

@@ -5,7 +5,7 @@ if (width > 1024) {
         document.getElementById("menu").style = "background-color: transparent";
     }
     else {
-        document.getElementById("menu").style = "background-color: var(--main)";
+        document.getElementById("menu").style = "background-color: rgb(31, 40, 65)";
     }
 }, 10)
 }
@@ -29,7 +29,7 @@ setInterval(function() {
     let width = window.screen.width;
     if (width < 1024 && openm == true) {
         document.getElementById("menu").style.height = "1900px";
-        document.getElementById("menu").style.backgroundColor = "var(--main)";
+        document.getElementById("menu").style.backgroundColor = "rgb(31, 40, 65)";
     }
     else if (width > 1024) {
         document.getElementById("menu").style.height = "85px";
