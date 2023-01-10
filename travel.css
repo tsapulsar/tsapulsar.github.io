@@ -10,6 +10,7 @@ body {
     background-position: bottom right;
     padding-top: 100px;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #section {
@@ -17,13 +18,22 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #header {
     font-size: 70px;
-    color: var(--second);
+    padding-top: 20px;
     text-transform: uppercase;
-    text-align: center;
     font-weight: 700;
+    border-top: 6px solid var(--second);
+    border-left: 6px solid var(--second);
+    color: white;
+    width: 700px;
+    margin-top: 0;
+    text-align: center;
 }
 
 #planet {
@@ -33,11 +43,12 @@ body {
     align-items: center;
 }
 #planetimage {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 #planetinfo {
+    font-size: 18px;
     margin-left: 30px;
 }
 #planetheader {
@@ -45,6 +56,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--second);
+    margin-bottom: -25px;
 }
 #planettext {
     font-size: 20px;
@@ -70,7 +82,9 @@ body {
     align-items: center;
 }
 #choice {
-    background:rgb(32, 41, 61);
+    background: linear-gradient(var(--main), rgb(25, 42, 73)), url();
+    border-bottom: 6px solid var(--second);
+    border-right: 6px solid var(--second);
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
@@ -80,19 +94,24 @@ body {
     padding-bottom: 50px;
 }
 #price {
-    font-size: 25px;
+    font-size: 40px;
     color: var(--second);
     font-weight: 700;
 }
 
 #details {
     color: white;
+    margin-bottom: 30px;
 }
 
 #book, #book1, #book2 {
     width: 100px;
-    margin-top: 20px;
     height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
     outline: none;
     border: none;
     background: var(--main);
@@ -101,7 +120,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-family: "Poppins";
-    transition: 0.4s;
+    transition: 0.2s;
 }
 #book:hover, #book1:hover, #book2:hover{
     color: var(--second);

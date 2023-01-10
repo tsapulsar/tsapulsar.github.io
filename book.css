@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(rgb(11, 21, 52), var(--main)), url();
+    pointer-events:all;
+}
+
+#back {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/surface.jpg);
+    height: 100vh;
+    background-position: bottom right;
+    padding-top: 100px;
+    text-align: center;
+}
+#header {
+    margin-top: 100px;
+    font-size: 80px;
+    color: var(--second);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#arrow {
+    color: white;
+    margin-right: 10px;
+}
+#option,#option1 {
+    display: flex;
+    align-items: center;
+    color: var(--second);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 100px;
+    text-decoration: none;
+}
+#option1 {
+    color: var(--second);
+    margin-top: -50px;
+    transition: 0.2s;
+}
+#option1:hover {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#option {
+    margin-top: -10px;
+    transition: 0.2s;
+}
+#option:hover {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
