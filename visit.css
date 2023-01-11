@@ -43,7 +43,7 @@ body {
     margin-left: 20px;
 }
 #secimg1, #secimg2, #secimg3, #secimg4 {
-    background: url(./images/park.jpg);
+    background: url(./images/park.png);
     width: 1000px;
     height: 500px;
     background-size: cover;
@@ -51,19 +51,19 @@ body {
 }
 
 #secimg2 {
-    background: url(./images/museum.jpg);
+    background: url(./images/museum.png);
     background-size: cover;
     background-position: center left;
 }
 
 #secimg3 {
-    background: url(./images/theater.jpg);
+    background: url(./images/theater.png);
     background-size: cover;
     background-position: center;
 }
 
 #secimg4 {
-    background: url(./images/foodcourt.jpg);
+    background: url(./images/foodcourt.png);
     background-size: cover;
     background-position: center;
 }

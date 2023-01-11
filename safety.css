@@ -30,22 +30,47 @@ body {
     margin-right: auto;
     margin-bottom: 100px;
 }
-#header {
+#header, #header1 {
     font-size: 70px;
-    color: var(--second);
+    padding-top: 20px;
     text-transform: uppercase;
-    text-align: center;
     font-weight: 700;
+    border-top: 6px solid var(--second);
+    border-left: 6px solid var(--second);
+    color: white;
+    width: 1000px;
+    margin-top: 0;
+    margin-bottom: 150px;
+    text-align: center;
+}
+#header1 {
+    border-top: 6px solid #ff7d7d;
+    border-left: 6px solid #ff7d7d;
 }
 #text {
     font-size: 18px;
     color: white;
     margin-left: 20px;
 }
-#listing {
-    margin-top: -75px;
+#listing, #listings, #listing1,#listing2 {
+    margin-top: -120px;
     display: flex;
+    width: 900px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     align-items: center;
+}
+#listings, #listing1, #listing2 {
+    margin-top: -150px;
+}
+#listing1 {
+    border-right: 6px solid var(--second);
+    border-bottom: 6px solid var(--second);
+}
+#listing2 {
+    border-right: 6px solid #ff7d7d;
+    border-bottom: 6px solid #ff7d7d;
 }
 #num {
     font-size: 50px;

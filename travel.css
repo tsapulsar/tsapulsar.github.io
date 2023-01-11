@@ -37,29 +37,39 @@ body {
 }
 
 #planet {
-    margin-top: 0px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #planetimage {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+    border-right: 6px solid white;
+    border-bottom: 6px solid white;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
 }
 
 #planetinfo {
+    border-top: 6px solid var(--second);
+    border-left: 6px solid var(--second);
+    margin-left: 50px;
+    padding-left: 50px;
     font-size: 18px;
-    margin-left: 30px;
+    height: 250px;
 }
 #planetheader {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--second);
-    margin-bottom: -25px;
+    margin-bottom: -10px;
 }
 #planettext {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
@@ -92,6 +102,10 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
+    transition: 0.4s;
+}
+#choice:hover {
+    transform: scale(1.1);
 }
 #price {
     font-size: 40px;
