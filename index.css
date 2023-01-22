@@ -1,4 +1,3 @@
-
 #bg {
     margin-top: -17px;
     width: 100%;
@@ -10,7 +9,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-bottom: 120px;
+}
+
+#backtop {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    transform: rotate(90deg);
+    padding-right: 0px;
+    width: 70px;
+    border: none;
+    border-right: 5px solid white;
+    background: transparent;
+    color: var(--second);
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Poppins";
+    transition: 0.3s;
+    z-index: 9000;
+}
+#backtop:hover {
+    padding-right: 25px;
+    cursor: pointer;
 }
 
 #bgtitle {
@@ -23,10 +45,10 @@
 #subtitle {
     color: var(--second);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
     margin-top: -120px;
-    letter-spacing: 6px;
+    letter-spacing: 5.8px;
 }
 #boxes {
     position: absolute;
@@ -52,31 +74,36 @@
     height: 150px;
 }
 
-.mainsection {
+.mainsection{
     height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#cont {
+    border-bottom: 3px solid white;
+    width: 1265px;
+
+}
 #b1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/about.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 67, 149, 0.5)), url(./images/about.jpg);
     background-size: cover;
     background-position: bottom;
+
 }
 #b2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/safety.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 67, 149, 0.5)), url(./images/safety.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #b3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/building.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(23, 67, 149, 0.6)), url(./images/building.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #left, #right {
-    width: 500px;
     height: 670px;
     padding-bottom: 80px;
     margin-left: 50px;
@@ -86,6 +113,7 @@
     flex-direction: column;
 }
 #left {
+    width: 500px;
     padding-left: 200px;
     border-left: 3px solid white;
 }
@@ -103,12 +131,15 @@
     line-height: 100px;
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--second);
+    color: var(--third);
 }
 #travelheader {
     transform: rotate(270deg);
     width: 450px;
     margin-left: -100px;
+    background: url(./images/travel.jpg) 0 0 / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #sectext {
@@ -125,14 +156,17 @@
     margin-left: -40px;
     transition: 0.2s;
     text-decoration: none;
+    
 }
 #secbutton:hover {
     transform: scale(1.1);
     cursor: pointer;
-    color: var(--second);
+    color: transparent;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: var(--third);
 }
 #buttonsub {
-    font-size:30px;
+    font-size: 30px;
     text-transform: uppercase;
     color: var(--second);
     font-weight: 600;
@@ -140,8 +174,10 @@
 }
 
 #travelsec {
-    background: linear-gradient(rgba(21, 55, 120, 0.3), var(--main)), url();
-    height: 900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(23, 67, 149, 0.3)), url(); 
+    background-size: cover; 
+    background-position: bottom;
+    height: 700px;
 }
 
 #travelinfo {
@@ -164,7 +200,7 @@
 #option,#option1 {
     display: flex;
     align-items: center;
-    color: var(--second);
+    color: var(--third);
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 600;
@@ -173,7 +209,7 @@
 }
 
 #option1 {
-    color: var(--second);
+    color: var(--third);
     margin-top: -15px;
     transition: 0.2s;
 }
@@ -211,6 +247,7 @@
     text-transform: uppercase;
     color: var(--second);
     font-weight: 700;
+
 }
 
 #avaton {
@@ -233,7 +270,7 @@
 #vehiclebutton {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--third);
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 600;
@@ -244,7 +281,7 @@
 
 #vehiclebutton:hover {
     margin-left: 20px;
-    color: var(--second);
+    color: white;
     cursor: pointer;
 }
 
