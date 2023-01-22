@@ -290,6 +290,9 @@
         margin-top: 100px;
         height: 75vh;
     }
+    .mainsection {
+        height: 75vh;
+    }
     #boxes {
         margin-top: 120px
     }
