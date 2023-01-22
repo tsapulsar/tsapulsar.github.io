@@ -288,18 +288,18 @@
 @media only screen and (max-width: 1024px) {
     #bg {
         margin-top: 100px;
-        height: 65vh;
+        height: 70vh;
     }
     .mainsection:not(#travelsec,#vehiclesec) {
         padding-top: 20px;
-        height: 75vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: left;
     }
 
     #boxes {
-        margin-top: 500px
+        margin-top: 400px
     }
 
     #divider {
