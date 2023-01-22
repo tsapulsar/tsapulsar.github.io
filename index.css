@@ -285,6 +285,39 @@
     cursor: pointer;
 }
 
-
-
-
+@media only screen and (max-width: 1024px) {
+    #bg {
+        margin-top: 100px;
+    }
+    #boxes {
+        margin-top: 120px
+    }
+    #divider {
+        height: unset;
+    }
+    #header {
+        font-size: 90px;
+    }
+    #backtop {
+        right: 75px;
+    }
+    #travelheader {
+        padding-left: 10px;
+    }
+    #sectext {
+        font-size: 20px;
+    }
+    #left {
+        padding-left: 175px;
+    }
+    #right {
+        margin-right: 200px;
+    }
+    #secbutton {
+        font-size: 500px;
+    }
+    #buttonsub {
+        margin-top: -200px;
+    }
+    
+}

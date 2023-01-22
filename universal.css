@@ -221,12 +221,12 @@ body {
         overflow-x: hidden;
     }
     #menu {
-        height: 170px;
+        height: 175px;
         width: 100vw;
         display: block;
         transition: 0.3s;
         overflow: hidden;
-        padding-top: 50px;
+        padding-top: 20px;
 		background: rgb(31, 40, 65);
     }
     #menucontent {
@@ -241,7 +241,7 @@ body {
 		font-weight: 700;
         filter: opacity(100%);
         width: 150px;
-        height: 150px;
+        height: 50px;
         margin-left: 35vw;
         cursor: pointer;
         border: none;
@@ -272,4 +272,30 @@ body {
         margin-top: 30px;
 
     }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .contactdetails {
+        display: flex;
+        flex-direction: column;
+    }   
+    #contactheader {
+        margin-top: 20px;
+    }
+    
+    .contactdetail {
+
+        padding-top: 50px;
+
+    }
+
+    #contact {
+       
+        height: 700px; 
+       
+       
+    }
+
+
 }
