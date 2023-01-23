@@ -183,6 +183,8 @@ body {
         height: 1000px;
         border-right: 6px solid var(--second);
         border-top: 6px solid var(--second);
+        border-left: 6px solid var(--second);
+        border-bottom: 6px solid var(--second);
     }
 
     #aboutimg {
