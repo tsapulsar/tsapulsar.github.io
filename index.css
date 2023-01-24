@@ -308,7 +308,6 @@
     #boxes {
         display: none;
     }
-
     #divider {
         height: unset;
     }
@@ -370,7 +369,6 @@
         font-size: 40px;
         line-height: 60px;
     }
-
     #travelsec {
         height: 95vh;
         flex-direction: column;
