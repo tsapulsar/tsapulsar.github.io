@@ -67,3 +67,43 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+@media only screen and (max-width: 1024px) {
+
+
+    #back {
+        margin-top: 100px;
+        height: 70vh;
+    }
+
+    #sub {
+        font-size: 100px;
+    }
+
+    #disclaimer {
+        font-size: 30px;
+        width: 900px
+    }
+
+    #section {
+        height: 70vh;
+        width: 900px;
+        padding-bottom: 500px;
+    }
+
+    #header { 
+        border-left: 6px solid var(--second);
+        border-top: 6px solid var(--second);
+     }
+
+    #secimg1, #secimg2, #secimg3, #secimg4 {
+        width: 900px;
+        height: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #text {
+        font-size: 40px;
+    }
+}
