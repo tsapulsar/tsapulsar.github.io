@@ -45,6 +45,12 @@ body {
 #ball7 {
     margin-top: 130px;
 }
+#ball8 {
+    margin-top: 130px;
+}
+#ball9 {
+    margin-top: 130px;
+}
 
 #lines {
     margin-top: 100px;
@@ -52,7 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1950px;
+    height: 2200px;
     width: 6px;
     background: var(--third);
 }
@@ -135,17 +141,54 @@ body {
     background: var(--second);
     width: 0px;
 }
-#event {
-    font-size: 25px;
+.event {
+    font-size: 20px;
     text-transform: uppercase;
     color: white;
     font-weight: 600;
     margin-left: -50px;
     width: 1000px;
-    margin-top: -85px;
+    margin-top: 5px;
+    height: 150px;
     display: flex;
     align-items: center;
 }
+
+#e1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.5)), url(./images/window.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#e2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.5)), url(./images/terransurface2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#e3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.5)), url(./images/astronaut.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#e4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(23, 48, 149, 0.5)), url(./images/building2.jpg);
+    background-size: cover;
+}
+#e5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.5)), url(./images/stars.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#e6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(23, 48, 149, 0.8)), url(./images/interior.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#e7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.3)), url(./images/redmoon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 #date {
     display: flex;
     font-size: 70px;
