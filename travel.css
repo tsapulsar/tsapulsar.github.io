@@ -169,3 +169,75 @@ body {
     color: var(--second);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1024px) {
+
+
+    #back {
+        margin-top: 100px;
+        height: 70vh;
+    }
+
+    #sub {
+        font-size: 100px;
+    }
+
+    #planet, #choices {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #planetimage {
+        width: 500px;
+        height: 500px;
+        border-right: unset;
+    }
+
+    .planetinfo {
+
+        border: 6px solid var(--second);
+        margin-left: 125px;
+        margin-right: 125px;
+        padding-bottom: 150px;
+        font-size: 5200px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+
+    #planetheader {
+        font-size: 90px;
+    }
+
+    #planettext {
+        font-size: 30px;
+    }
+
+    #choice {
+        border-right: 6px solid var(--second);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 200px;
+    }
+
+    #price {
+        font-size: 140px;
+    }
+
+    #details {
+        font-size: 40px;
+
+    }
+
+    #book, #book1, #book2 {
+        
+        font-size: 50px;
+        
+    }
+
+}
