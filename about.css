@@ -210,5 +210,28 @@ body {
 
     #timeline {
         margin-top: 1000px;
+        width: 100%;
+        
+    }
+    #event {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+    #date {
+        font-size: 100px;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    #eventtext {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    #lines {
+        display: none;
     }
 }
