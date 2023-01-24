@@ -15,7 +15,7 @@ html, body {
 :root {
     --main: rgb(15, 18, 28);
     --second: rgb(154, 221, 255);
-    --third: rgb(255, 171, 141);
+    --third: rgb(255, 243, 137);
 }
 
 body {
@@ -176,7 +176,7 @@ body {
     font-family: "Poppins";
     font-size: 17px;
     font-weight: 700;
-    color: var(--second);
+    color: var(--third);
     text-align: left;
 }
 
@@ -221,12 +221,12 @@ body {
         overflow-x: hidden;
     }
     #menu {
-        height: 175px;
+        height: 180px;
         width: 100vw;
         display: block;
         transition: 0.3s;
         overflow: hidden;
-        padding-top: 20px;
+        padding-top: 50px;
 		background: rgb(31, 40, 65);
     }
     #menucontent {
@@ -241,7 +241,7 @@ body {
 		font-weight: 700;
         filter: opacity(100%);
         width: 150px;
-        height: 50px;
+        height: 150px;
         margin-left: 35vw;
         cursor: pointer;
         border: none;
@@ -275,20 +275,60 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+    #contact {
+        height: 1500px;
+        padding: 0;
+        padding-bottom: 100px;
+    }
 
     .contactdetails {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        
     }   
     #contactheader {
-        margin-top: 20px;
+        text-align: center;
+        margin: 0;
+        margin-top: 150px;
+        font-size: 100px;
+    }
+    #social {
+        width: 100px;
+        margin-top: 30px;
+    }
+    #copyright {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
     }
     
     .contactdetail {
-        padding-top: 50px;
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacttitle {
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .contactinfo {
+        font-size: 40px;
+        line-height: 60px;
     }
 
-    #contact {
-        height: 700px; 
-    }
+
 }

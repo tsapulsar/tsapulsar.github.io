@@ -19,7 +19,7 @@ function openmenu() {
         document.getElementById("menubutton").style.transform = "rotate(-90deg)";
     }
     else if (openm == true) {
-        document.getElementById("menu").style.height = "100px";
+        document.getElementById("menu").style.height = "180px";
         openm = false;
         document.getElementById("menubutton").style.transform = "rotate(90deg)";
     }
