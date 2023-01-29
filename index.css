@@ -139,6 +139,7 @@
     width: 450px;
     margin-left: -100px;
     background: url(./images/travel.jpg) 0 0 / cover no-repeat;
+    filter: brightness(150%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

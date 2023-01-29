@@ -201,6 +201,7 @@ body {
     margin-left: 20px;
     font-weight: 500;
     text-transform: none;
+    padding-right: 30px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -256,11 +257,13 @@ body {
         width: 100%;
         
     }
-    #event {
+    #info {
+        height: 2500px;
+    }
+    .event {
         flex-direction: column;
         text-align: center;
-        margin-top: 50px;
-        
+        height: 500px;
     }
     #date {
         font-size: 100px;

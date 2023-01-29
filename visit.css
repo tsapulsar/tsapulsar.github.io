@@ -42,7 +42,7 @@ body {
     color: white;
     margin-left: 20px;
 }
-#secimg1, #secimg2, #secimg3, #secimg4 {
+#secimg1, #secimg2, #secimg4 {
     background: url(./images/park.png);
     width: 1000px;
     height: 500px;
@@ -56,12 +56,6 @@ body {
     background-position: center left;
 }
 
-#secimg3 {
-    background: url(./images/theater.png);
-    background-size: cover;
-    background-position: center;
-}
-
 #secimg4 {
     background: url(./images/foodcourt.png);
     background-size: cover;
@@ -69,31 +63,35 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-
-
     #back {
-        margin-top: 100px;
-        height: 70vh;
+        height: 800px;
+        padding-top: 500px;
+        background-position: center;
     }
-
-    #sub {
+    #title {
         font-size: 100px;
+    }
+    #sub {
+        font-size: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     #disclaimer {
         font-size: 30px;
-        width: 900px
+        width: 900px;
+        margin-top: 100px;
     }
 
     #section {
-        height: 70vh;
+        height: 1600px;
         width: 900px;
-        padding-bottom: 500px;
     }
 
     #header { 
         border-left: 6px solid var(--second);
         border-top: 6px solid var(--second);
+        color: white;
      }
 
     #secimg1, #secimg2, #secimg3, #secimg4 {
@@ -101,6 +99,7 @@ body {
         height: 1000px;
         margin-left: auto;
         margin-right: auto;
+        background-position: center;
     }
     
     #text {
