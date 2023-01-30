@@ -77,3 +77,53 @@ body {
     font-weight: 700;
     color: var(--second);
 }
+
+@media only screen and (max-width: 1024px) {
+
+    #back {
+        height: 800px;
+        padding-top: 500px;
+        background-position: right;
+    }
+    #title {
+        font-size: 100px;
+    }
+    #sub {
+        font-size: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #section {
+        margin: 0;
+        padding: 0;
+        margin-top: 100px;
+    }
+    #header, #header1 {
+        font-size: 80px;
+        padding:0;
+        text-align: center;
+        padding-top: 50px;
+        width: 900px;
+        margin: auto;
+    }
+    #header1 {
+        font-size: 60px;
+    }
+    #listing, #listing1, #listings, #listing2 {
+        padding: 0;
+        margin: 0;
+        width: 900px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #listing1, #listing2 {
+        padding-bottom: 50px;
+    }
+    #num {
+        width: 50px;
+
+    }
+    #text {
+        width: 800px;
+    }
+}

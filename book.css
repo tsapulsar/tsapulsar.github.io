@@ -74,9 +74,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    padding-left: 50px;
-    padding-right: 50px;
+    border-left: 2px solid rgb(51, 72, 119);
+    border-right: 2px solid rgb(51, 72, 119);
+    padding-left: 70px;
+    padding-right: 70px;
 }
 #days, #hours, #minutes, #seconds {
     color: var(--third);
@@ -90,3 +91,39 @@ body {
     font-weight: 600;
     text-transform: uppercase; 
 }
+
+@media only screen and (max-width: 1024px) {
+
+    #back {
+        height: 1500px;
+        padding-top: 300px;
+        background-position: center bottom;
+        background-repeat: none;
+    }
+    #title {
+        font-size: 120px;
+    }
+    #sub {
+        font-size: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #option, #option1 {
+        font-size: 75px;
+        margin-top: 20px;
+    }
+    #timesection {
+        height: 250px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #days, #hours, #minutes, #seconds {
+        font-size: 80px;
+    }
+    #word {
+        font-size: 40px;
+    }
+
+}
+
+
