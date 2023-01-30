@@ -107,3 +107,47 @@ body {
     text-transform: uppercase;
     font-weight: normal;
 }
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    #back {
+        margin-top: 100px;
+        height: 70vh;
+    }
+
+    #sub {
+        font-size: 60px;
+    }
+
+    #stats {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectiontext {
+        width: 900px;
+        height: 300px;
+        padding-right:unset;
+        padding-left:unset;
+        margin-right:unset;
+        margin-left:unset;
+        align-items: center;
+    }
+
+    #data {
+        text-align: left;
+        height: 2000px;
+        font-size: 50px;
+        border-bottom: 2px solid white;
+        
+    }
+
+    #num {
+        text-align: right;
+        font-size: 45px;
+        margin-bottom: 1000px;
+    
+    }
+}
