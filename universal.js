@@ -41,5 +41,10 @@ document.getElementById("contactlink").onmouseover = function() {
     document.getElementById("contactlink").style.cursor = "pointer";
 }
 document.getElementById("contactlink").onclick = function() {
-    window.scrollTo({top: 10000, behavior: 'smooth'});
+    window.scrollTo({top: 1000000000000000, behavior: 'smooth'});
+    if (width < 1024 && openm == true) {
+        openm = false;
+        document.getElementById("menubutton").style.transform = "rotate(90deg)";
+        document.getElementById("menu").style.height = "180px";
+    }
 }   
