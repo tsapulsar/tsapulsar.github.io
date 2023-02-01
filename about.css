@@ -3,7 +3,7 @@ body {
 }
 
 #back {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/about.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.6)), url(./images/about.jpg);
     height: 500px;
     margin-top: -30px;
     background-position: center right;
@@ -108,17 +108,17 @@ body {
     border-right: 6px solid var(--third);
 }
 #aboutimg, #aboutimg1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(23, 48, 149, 0.5)), url(./images/spaceshipspace.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(23, 48, 149, 0.0)), url(./images/spaceshipspace.jpg);
     width: 300px;
     background-position: center;
     background-size: cover;
-    height: 320px;
+    height: 365px;
     border-right: 6px solid var(--second);
     border-top: 6px solid var(--second);
 }
 #aboutimg1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(23, 48, 149, 0.5)), url(./images/nightearth.jpg);
-    background-position: bottom left;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(23, 48, 149, 0.0)), url(./images/moon.jpg);
+    background-position: top center;
     background-size: cover;
     border: none;
     height: 562px;
@@ -240,7 +240,10 @@ body {
         margin-top: -430px;
         margin-right: 100px;
         margin-left: 50px;
-        height: 1500px;
+        height: 1700px;
+    }
+    #aboutimg1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(23, 48, 149, 0.4)), url(./images/moon.jpg);
     }
     #sectiontext1, #sectiontext2 {
         font-size: 40px;

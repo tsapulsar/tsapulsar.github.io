@@ -2,7 +2,7 @@
     margin-top: -17px;
     width: 100%;
     height: 650px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 67, 149, 0.6)), url(./images/earth.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 67, 149, 0.5)), url(./images/earth.jpg);
     background-size: cover;
     font-family: "Poppins";
     display: flex;
@@ -60,13 +60,13 @@
     height: 150px;
 }
 #box1 {
-    border-top: 3px solid white;
-    border-left: 3px solid white;
+    border-top: 4px solid var(--third);
+    border-left: 4px solid var(--third);
     margin-right: 600px;
 }
 #box2 {
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
+    border-bottom: 4px solid var(--third);
+    border-right: 4px solid var(--third);
     margin-top: 00px;
     margin-left: 600px;
 }
@@ -87,7 +87,7 @@
 
 }
 #b1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(23, 67, 149, 0.5)), url(./images/about.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 67, 149, 0.3)), url(./images/about.jpg);
     background-size: cover;
     background-position: bottom;
 
@@ -99,7 +99,7 @@
 }
 
 #b3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(23, 67, 149, 0.6)), url(./images/building.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(23, 67, 149, 0.3)), url(./images/building.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -176,7 +176,7 @@
 }
 
 #travelsec {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(23, 67, 149, 0.3)), url(); 
+    background: linear-gradient(rgba(57, 73, 112, 0.1), rgba(23, 67, 149, 0.3)), url(); 
     background-size: cover; 
     background-position: bottom;
     height: 700px;
@@ -188,7 +188,7 @@
     margin-left: -150px;
 }
 #travelimg {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 67, 149, 0.3)), url(./images/travel.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(23, 67, 149, 0.3)), url(./images/travel.jpg);
     background-size: cover;
     background-position: bottom;
     width: 800px;

@@ -3,7 +3,7 @@ body {
 }
 
 #back {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/earth.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.6)), url(./images/earth.jpg);
     height: 400px;
     margin-top: -30px;
     background-position: center top;

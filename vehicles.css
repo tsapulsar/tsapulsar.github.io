@@ -3,7 +3,7 @@ body {
 }
 
 #back {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/vehicles.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(23, 48, 149, 0.3)), url(./images/vehicles.jpg);
     height: 500px;
     margin-top: -30px;
     background-position:40%;
