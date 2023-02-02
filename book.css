@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(11, 21, 52), var(--main)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
     pointer-events:all;
 }
 
@@ -114,11 +114,9 @@ body {
     }
     #timesection {
         height: 250px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
     #days, #hours, #minutes, #seconds {
-        font-size: 80px;
+        font-size: 70px;
     }
     #word {
         font-size: 40px;

@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(11, 21, 52), var(--main)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
     pointer-events:all;
 }
 
@@ -75,7 +75,7 @@ body {
 #num {
     font-size: 50px;
     font-weight: 700;
-    color: var(--second);
+    color: var(--third);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -84,6 +84,11 @@ body {
         height: 800px;
         padding-top: 500px;
         background-position: right;
+    }
+    #disclaimer {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 800px;
     }
     #title {
         font-size: 100px;

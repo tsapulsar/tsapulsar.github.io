@@ -54,8 +54,8 @@ document.getElementById("activityheader").onmousedown = function(){
         document.getElementById("qa3").style = "height: 650px;padding-top: 50px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;border-bottom: 6px solid var(--third);border-right: 6px solid var(--third);";
         document.getElementById("q3").style = "height: 650px";
         if (window.innerWidth < 1024) {
-            document.getElementById("q3").style = "height: 1700px; width: 100%; padding-top: 50px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;border-bottom: 6px solid var(--third);border-right: 6px solid var(--third);";
-            document.getElementById("qa3").style = "height: 1700px";
+            document.getElementById("q3").style = "height: 4200px; width: 100%; padding-top: 50px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;border-bottom: 6px solid var(--third);border-right: 6px solid var(--third);";
+            document.getElementById("qa3").style = "height: 4200px";
         }
         c3++;
     } 

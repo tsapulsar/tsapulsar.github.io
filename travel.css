@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(11, 21, 52), var(--main)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
     pointer-events:all;
 }
 
@@ -121,7 +121,7 @@ body {
     align-items: center;
 }
 #choice {
-    background: linear-gradient(var(--main), rgb(25, 42, 73)), url();
+    background: linear-gradient(rgb(12, 24, 47), rgb(25, 42, 73)), url();
     border-bottom: 6px solid var(--second);
     border-right: 6px solid var(--second);
     margin-left: 20px;
@@ -174,7 +174,7 @@ body {
     width: 1000px;
 }
 .qaheader {
-    background: linear-gradient(var(--main), rgb(25, 42, 73)), url();
+    background: linear-gradient(rgb(12, 24, 47), rgb(25, 42, 73)), url();
     border-top: 6px solid var(--second);
     border-left: 6px solid var(--second);
     height: 100px;
@@ -199,7 +199,7 @@ body {
     color: var(--third);
 }
 .qainfo {
-    background: linear-gradient(rgb(25, 42, 73), var(--main)), url();
+    background: linear-gradient(rgb(25, 42, 73), var(--main2)), url();
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -226,7 +226,7 @@ body {
     display: flex;
     align-items: center;
 }
-#qatext {
+#qatext, #qatext1 {
     font-weight: normal;
     margin-left: 20px;
     color: white;
@@ -371,12 +371,25 @@ body {
         font-size: 40px;
     }
     #daynum {
-        width: 250px;
+        width: 200px;
         font-size: 50px;
     }
-    #qatext {
+    #qatext, #qatext1 {
         font-size: 40px;
         line-height: 60px;
+    }
+    #qatext1 {
+        width: 500px;
+        margin-left: 0px;
+    }
+
+    .qasec {
+        flex-direction: column;
+    }
+    #qaimage {
+        width: 600px;
+        height: 400px;
+        margin-top: 50px;
     }
 
 }

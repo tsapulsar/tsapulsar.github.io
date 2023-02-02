@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(11, 21, 52), var(--main)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
     pointer-events:all;
 }
 
