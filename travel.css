@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main)), url();
     pointer-events:all;
 }
 
@@ -45,7 +45,7 @@ body {
 #planetimage {
     width: 150px;
     height: 150px;
-    border-right: 6px solid white;
+    border-right: 6px solid var(--third);
     padding-bottom: 50px;
     padding-left: 50px;
     padding-top: 50px;
@@ -157,7 +157,10 @@ body {
     text-decoration: none;
     outline: none;
     border: none;
-    background: rgb(22, 31, 68);
+    border-top: 3px solid var(--second);
+    border-left: 3px solid var(--second);
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -166,7 +169,11 @@ body {
     transition: 0.2s;
 }
 #book:hover, #book1:hover, #book2:hover{
-    color: var(--second);
+    color: var(--third);
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid var(--second);
+    border-right: 3px solid var(--second);
     cursor: pointer;
 }
 
@@ -189,7 +196,7 @@ body {
     z-index: 101;
     margin-top: 30px;
 }
-#tripheader, #activityheader, #foodheader, #roomheader, #qa1, #qa2, #qa3, #qa4 {
+#tripheader, #activityheader, #foodheader, #roomheader, #planetsheader, #qa1, #qa2, #qa3, #qa4, #qa5 {
     transition: 0.3s;
 }
 
@@ -243,12 +250,22 @@ body {
 #qasec1 {
     margin-top: 50px;
 }
-#qaimage {
+#qaimage, #qaimages, #qaimages2 {
     width: 275px;
     margin-left: 10px;
     margin-right: 10px;
     height: 150px;
     object-fit: cover;
+}
+#qaimages, #qaimages2 {
+    border-top: 6px solid var(--third);
+    border-left: 6px solid var(--third);
+    width: 500px;
+    height: 300px;
+}
+#qaimages2 {
+    width: 400px;
+    height: 250px;
 }
 
 
@@ -352,7 +369,7 @@ body {
     .qaheader {
         margin-top: 50px;
         height: 200px;
-        font-size: 70px;
+        font-size: 65px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -363,7 +380,7 @@ body {
         padding-top: 0; padding-bottom: 0; 
         padding-left: 50px; padding-right: 50px;
     }
-    #q1, #q2, #q3, #q4 {
+    #q1, #q2, #q3, #q4, #q5 {
         padding-top: 0; padding-bottom: 0; 
         padding-left: 50px; padding-right: 50px;
     }
@@ -386,10 +403,11 @@ body {
     .qasec {
         flex-direction: column;
     }
-    #qaimage {
+    #qaimage, #qaimages, #qaimages2 {
         width: 600px;
         height: 400px;
         margin-top: 50px;
     }
+
 
 }

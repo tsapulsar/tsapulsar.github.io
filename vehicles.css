@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main)), url();
 }
 
 #back {
@@ -90,8 +90,8 @@ body {
     flex-direction: column;
     width: 400px;
     height: 150px;
-    border-left: 3px solid rgb(25, 39, 65);
-    border-right: 3px solid rgb(25, 39, 65);
+    border-left: 3px solid rgb(69, 88, 124);
+    border-right: 3px solid rgb(69, 88, 124);
     font-family: "Poppins";
     color: var(--third);
     font-size: 50px;

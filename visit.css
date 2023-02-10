@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(22, 31, 68), var(--main2)), url();
+    background: linear-gradient(rgb(22, 31, 68), var(--main)), url();
     pointer-events:all;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 #secimg2 {
-    background: url(./images/museum.png);
+    background: url(./images/museum.jpg);
     background-size: cover;
     background-position: center left;
 }
