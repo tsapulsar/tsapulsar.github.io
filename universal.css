@@ -14,6 +14,7 @@ html, body {
 
 :root {
     --main: #103361;
+    --mainhover: #2675b9;
     --main2: rgb(33, 26, 63);
     --second: rgb(154, 221, 255);
     --third: rgb(255, 229, 113);
