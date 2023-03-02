@@ -441,6 +441,10 @@
     cursor: pointer;
 }
 
+#left {
+    
+}
+
 @media only screen and (max-width: 1024px) {
     #bg {
         margin-top: 100px;

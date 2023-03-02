@@ -108,7 +108,7 @@ body {
 	margin-left: 20px;
 }
 .menu-link {
-	margin-left: 20px;
+    margin-left: 20px;
 	margin-top: 5px;
 	font-size: 18px;
 	text-decoration: none;
@@ -119,10 +119,15 @@ body {
 	pointer-events: all;
 }
 
-.menu-link:hover {
+#right_side {
+    margin-left: 25vw;
+}
+
+.menu-link:hover{
 	color: var(--second);
 	border-bottom: 1px solid var(--second);
 }
+
 
 
 .header {

@@ -9,7 +9,50 @@ if (width > 1024) {
     }
 }, 10)
 }
+let headerMain = `
+    <nav>
+        <a href="./index.html" class="menu-link">Home</a>
+        <a href="./about.html" class="menu-link">About</a>
+        <a href="./travel.html" class="menu-link">Travel</a>
+        <a href="./safety.html" class="menu-link">Safety</a>
+        <a href="./vehicles.html" class="menu-link">Vehicles</a>
+        <a href="./visit.html" class="menu-link">Visit</a>
+        <a href="./references.html" class="menu-link">References</a>
+        <a class="menu-link" id="contactlink">Contact</a>
+        <a href="./book.html" class="menu-link" id="right_side" >Book</a>
+        <a href="./login.html" class="menu-link" >Login</a>
+    </nav>
+`;
+document.getElementById("header-main").innerHTML = headerMain;
 
+let footerMain = `
+
+    <nav>
+    <div class="contactdetails">
+        <div class="contactdetail">
+            <p id="contactheader">PULSAR</p>
+            <image src="./images/facebook.png" id="social"></image>
+            <image src="./images/twitter.png" style="margin-left: 10px;" id="social"></image>
+            <image src="./images/youtube.png" style="margin-left: 10px;" id="social"></image>
+            <p id="copyright">Copyright © 2140 - 2148 PULSAR</p>
+
+        </div>
+        <div class="contactdetail">
+            <p class="contacttitle">Headquarters Location & <br>Mailing Address</p>
+            <p class="contactinfo">5783 Newport Drive<br>Charlotte NC, 28328</p>
+        </div>
+        <div class="contactdetail">
+            <p class="contacttitle">Questions?</p>
+            <p class="contactinfo"><b>Email:</b> contact@tsapulsar.com<br><b>Phone:</b> 745-473-1365</p>
+        </div>
+    </div>
+
+    </nav>
+
+
+`;
+
+document.getElementById("footer-main").innerHTML = footerMain;
 /*menu*/
 var openm = false;
 function openmenu() {
@@ -47,4 +90,4 @@ document.getElementById("contactlink").onclick = function() {
         document.getElementById("menubutton").style.transform = "rotate(90deg)";
         document.getElementById("menu").style.height = "180px";
     }
-}   
+}
