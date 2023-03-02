@@ -274,6 +274,7 @@ body {
     margin-top: -70px;
 }
 #footer-main {
+    margin-top: 200px;
     background: var(--mbg);
 }
 
