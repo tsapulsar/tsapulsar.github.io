@@ -1,15 +1,29 @@
 
 (function () {
-  var div = document.createElement('div'),
-      ref = document.getElementsByTagName('base')[0] || 
-            document.getElementsByTagName('script')[0];
-  div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
-  ref.parentNode.insertBefore(div, ref);
-  window.onload = function() {
+    var div = document.createElement('div'),
+    ref = document.getElementsByTagName('base')[0] || 
+    document.getElementsByTagName('script')[0];
+    div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+    ref.parentNode.insertBefore(div, ref);
+    window.onload = function() {
+
         window.scrollTo(0, 0);
         div.parentNode.removeChild(div);
+
         document.getElementById("paget").style = "width:0";
         document.getElementById("pagettext").style = "opacity: 0;";
+
+        const blob = document.getElementById("followmouse");
+
+        window.onpointermove = event => { 
+            const { clientX, clientY } = event;
+            blob.animate({
+                left: `${clientX}px`,
+                top: `${clientY + window.scrollY}px`
+            }, { duration: 400, fill: "forwards" });
+        }
+        
+
         let headerMain = `
         <nav>
             <div id="menu">
@@ -28,14 +42,21 @@
                 <p class="menu-link" id="contactlink">Contact</p>
             </div>
             <div id="menu-right">
-                <a href="./book.html" id="rightbutton1">Book</a>
-                <a href="./login.html" id="rightbutton2">Login</a>
+                <a id="rightbutton1">Book</a>
+                <a id="rightbutton2">Login</a>
             </div>
                 <script async src="universal.js"></script> 
             </div>
         </nav>
         `;
+
         document.getElementById("menu-main").innerHTML = headerMain;
+
+        document.getElementById("username").onmousedown = function(){
+            document.getElementById("paget").style = "left: 0; width:100%";
+            document.getElementById("pagettext").style = "opacity: 1";
+            setTimeout(function(){ window.location.href = "./index.html"; }, animateSpeed);
+        };
         document.getElementById("homeb").onmousedown = function(){
             document.getElementById("paget").style = "left: 0; width:100%";
             document.getElementById("pagettext").style = "opacity: 1";
@@ -81,6 +102,10 @@
             document.getElementById("pagettext").style = "opacity: 1";
             setTimeout(function(){ window.location.href = "./login.html"; }, animateSpeed);
         };
+        /*index buttons*/
+        
+        /*ADD NEWSLETTER LINKS*/
+
         let footerMain = `
         <nav>
         <div class="contactdetails">
@@ -105,7 +130,6 @@
         </nav>
     `;
     document.getElementById("footer-main").innerHTML = footerMain;
-    document.getElementById("footer-main").style.background = "var(--mbg)";
 
     
     document.getElementById("contactlink").onmouseover = function() {

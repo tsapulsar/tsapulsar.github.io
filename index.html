@@ -11,7 +11,7 @@
     <script src="universal.js"></script>
 </head>
 <body data-aos="none" data-aos-duration="10"  style="transition: 0.01s">
-
+    <div id="followmouse"></div>
     <header id="menu-main"></header>
     <div id="paget">
         <p id="pagettext">PULSAR</p>
@@ -36,7 +36,7 @@
             <p id="sectext" data-aos="fade-up">Pulsar is a space tourism company that specializes in providing out-of-this-world experiences to individuals looking to explore the final frontier and experience the wonders of space first-hand.</p>
         </div>
         <div id="right" data-aos="fade-up-left">
-            <a id="secbutton" href="./about.html" data-aos="zoom-in-left">></a>
+            <a id="secbutton" data-aos="zoom-in-left">></a>
             <p id="buttonsub" data-aos="flip-left">Read More</p>
         </div>
     </div>
@@ -47,8 +47,8 @@
         <div id="travelinfo">
             <div id="travelimg" data-aos="zoom-in-up"></div>
             <p id="traveltext">At Pulsar Space Tourism, we offer a once-in-a-lifetime opportunity to travel to outer space and experience the beauty and wonder of the cosmos. Our state-of-the-art spacecraft and highly trained team of professionals ensure a comfortable and memorable journey for all of our passengers.</p>
-            <a id="option" data-aos="fade-up-left" href="./travel.html"><p id="arrow">></p>Destinations</a>
-            <a id="option1" data-aos="fade-up-left" href="./travel.html"><p id="arrow">></p>Pricing</a>
+            <a id="toption" data-aos="fade-up-left" ><p id="arrow">></p>Destinations</a>
+            <a id="toption1" data-aos="fade-up-left" ><p id="arrow">></p>Pricing</a>
         </div>
     </div>
 
@@ -59,7 +59,7 @@
             <p id="sectext" data-aos="fade-up">At Pulsar Space Tourism, we prioritize the safety of our passengers above all else by strictly following industry regulations and constantly reviewing and updating our safety protocols to ensure a safe and enjoyable journey for all.</p>
         </div>
         <div id="right" data-aos="fade-up-left">
-            <a id="secbutton" href="./safety.html" data-aos="zoom-in-left">></a>
+            <a id="secbutton1" data-aos="zoom-in-left">></a>
             <p id="buttonsub" data-aos="flip-left">Learn More</p>
         </div>
     </div>
@@ -69,7 +69,7 @@
         <img id="avaton" src="./images/avaton.png" data-aos="zoom-in-up"></img>
         <p id="vehiclename" data-aos="flip-left">Avaton Mark IV</p>
         <p id="vehicleheader" data-aos="fade-up-right">For the galaxy's best tourism.</p>
-        <a id="vehiclebutton" data-aos="fade-up" href="./vehicles.html"><p id="arrow" data-aos="fade-up" data-aos-delay="200" >></p>View All Vehicles</a>
+        <a id="vehiclebutton" data-aos="fade-up" ><p id="arrow" data-aos="fade-up" data-aos-delay="200" >></p>View All Vehicles</a>
     </div>
 
 
@@ -79,7 +79,7 @@
             <p id="sectext" data-aos="fade-up">Our facility offers interactive exhibits and displays about space travel, as well as parks and food courts. We are open to the public seven days a week, with extended hours on weekends. We can't wait to share the wonders of space with you!</p>
         </div>
         <div id="right" data-aos="fade-up-left">
-            <a id="secbutton" href="./visit.html" data-aos="zoom-in-left">></a>
+            <a id="secbutton2" data-aos="zoom-in-left">></a>
             <p id="buttonsub" data-aos="flip-left">See More</p>
         </div>
     </div>
@@ -91,7 +91,7 @@
                 <div id="aimg1"></div>
                 <div id="abox">
                     <p id="adate">Janurary 21, 2148</p>
-                    <p id="ahead">Development of the Avaton Mark V</p>
+                    <p id="ahead1">Development of the Avaton Mark V</p>
                     <p id="aauthor">Richard Lin</p>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                 <div id="aimg2"></div>
                 <div id="abox">
                     <p id="adate">December 18, 2147</p>
-                    <p id="ahead">Our New Menu Item</p>
+                    <p id="ahead2">Our New Menu Item</p>
                     <p id="aauthor">Sameer Dalal</p>
                 </div>
             </div>
@@ -107,20 +107,24 @@
                 <div id="aimg3"></div>
                 <div id="abox">
                     <p id="adate">December 15, 2147</p>
-                    <p id="ahead">Latest Pictures of Terran's Surface</p>
+                    <p id="ahead3">Latest Pictures of Terran's Surface</p>
                     <p id="aauthor">Harvyn Lim</p>
                 </div>
             </div>
         </div>
 
-        <p id="subscribe"data-aos="fade-up">Subscribe to our newsletter today for our latest updates and news!</p>
-        <input type="email" id="email" name="fname" placeholder="Enter email"data-aos="fade-up">
-        <button id="submitemail"data-aos="zoom-in-up">Submit</button>
+        <p id="subscribe" data-aos="fade-up">Subscribe to our newsletter today for our latest updates and news!</p>
+        <div id="subscribeline">
+            <input type="email" id="email" name="fname" placeholder="Enter email">
+            <button id="submitemail">></button>
+        </div>
+        <button id="unsubscribe">Unsubscribe</button>
+        <p id="error">Please enter a valid email</p>
     </div>
 
 
-    <header id="footer-main"></header>
-    <script async src="universal.js"></script>
+    <footer id="footer-main"></footer>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 

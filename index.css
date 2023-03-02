@@ -152,17 +152,17 @@
     line-height: 30px;
     margin-top: -80px;
 }
-#secbutton {
+#secbutton, #secbutton1, #secbutton2 {
     font-size: 600px;
     color: white;
     font-weight: 600;
     margin-top: -175px;
     margin-left: -40px;
-    transition: 0.2s;
+    transition: 0.3s;
     text-decoration: none;
     
 }
-#secbutton:hover {
+#secbutton:hover, #secbutton1:hover, #secbutton2:hover {
     transform: scale(1.1);
     cursor: pointer;
     color: transparent;
@@ -201,7 +201,7 @@
     font-size: 17px;
     line-height: 30px;
 }
-#option,#option1 {
+#toption,#toption1 {
     display: flex;
     align-items: center;
     color: var(--third);
@@ -212,22 +212,22 @@
     text-decoration: none;
 }
 
-#option1 {
+#toption1 {
     color: var(--third);
     margin-top: -15px;
     transition: 0.2s;
 }
-#option1:hover {
+#toption1:hover {
     margin-left: 20px;
     color: white;
     cursor: pointer;
 }
 
-#option {
+#toption {
     margin-top: -10px;
     transition: 0.2s;
 }
-#option:hover {
+#toption:hover {
     margin-left: 20px;
     color: white;
     cursor: pointer;
@@ -364,14 +364,14 @@
     border-right: 4px solid var(--third);
     height: 150px;
 }
-#ahead {
+#ahead1, #ahead2, #ahead3 {
     font-size: 25px;
     font-weight: 700;
     margin-top: -15px;
     transition: 0.4s;
     color: var(--main);
 }
-#ahead:hover {
+#ahead1:hover, #ahead2:hover, #ahead3:hover {
     cursor: pointer;
     color: var(--mainhover);
     text-decoration: underline;
@@ -392,6 +392,7 @@
     color: var(--third);
     font-weight: 600;
     margin-top: 50px;
+    transition: 0.3s;
 }
 #email {
     width: 400px;
@@ -408,42 +409,62 @@
     text-align: center;
     border-radius: 100px;
     border: none;
+    transition: 0.3s;
 }
-#submitemail {
-    margin-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 200px;
-    font-family: "Poppins";
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-top: 3px solid var(--second);
-    border-left: 3px solid var(--second);
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
-    color: white;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: "Poppins";
-    transition: 0.2s;
-    background: transparent;
-}
-#submitemail:hover {
-    color: var(--third);
-    border-top: 3px solid transparent;
-    border-left: 3px solid transparent;
-    border-bottom: 3px solid var(--second);
-    border-right: 3px solid var(--second);
-    cursor: pointer;
+#subscribeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
 }
 
-#left {
-    
+#submitemail {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+   background: var(--mainhover);
+   width: 50px;
+   height: 50px;
+   color: white;
+   font-family: "Poppins";
+   font-weight: 700;
+   font-size: 25px;
+   border-radius: 40px;
+   transition: 0.3s;
 }
+#submitemail:hover {
+    cursor: pointer;
+    background:var(--third);
+}
+
+#unsubscribe {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    color: white;
+    font-family: "Poppins";
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-top: 3px solid var(--second);
+    font-weight: 600;
+    transition: 0.3s;
+    display: none;
+}
+#unsubscribe:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--third);
+}
+
+#error {
+    color: var(--error);
+    opacity: 0;
+    transition: 0.3s;
+}
+
 
 @media only screen and (max-width: 1024px) {
     #bg {
@@ -499,7 +520,7 @@
         width: 600px;
         height: 200px;
     }
-    #secbutton {
+    #secbutton, #secbutton1, #secbutton2 {
         margin: 0;
         margin-top: -100px;
         width: 600px;
@@ -552,7 +573,7 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-    #option, #option1 {
+    #toption, #toption1 {
         font-size: 75px;
         margin-top: 20px;
     }
