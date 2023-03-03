@@ -12,14 +12,15 @@
 
         document.getElementById("paget").style = "width:0";
         document.getElementById("pagettext").style = "opacity: 0;";
+        document.getElementById("loadcircle").style = "opacity: 0;";
 
         const blob = document.getElementById("followmouse");
 
         window.onpointermove = event => { 
             const { clientX, clientY } = event;
             blob.animate({
-                left: `${clientX}px`,
-                top: `${clientY + window.scrollY}px`
+                left: `${clientX - 15}px`,
+                top: `${clientY + window.scrollY -25}px`
             }, { duration: 400, fill: "forwards" });
         }
         
@@ -52,54 +53,50 @@
 
         document.getElementById("menu-main").innerHTML = headerMain;
 
-        document.getElementById("username").onmousedown = function(){
+        function pagetrans() {
             document.getElementById("paget").style = "left: 0; width:100%";
             document.getElementById("pagettext").style = "opacity: 1";
+            document.getElementById("loadcircle").style = "opacity: 1;";
+        }
+
+        document.getElementById("username").onmousedown = function(){
+            pagetrans();
             setTimeout(function(){ window.location.href = "./index.html"; }, animateSpeed);
         };
         document.getElementById("homeb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./index.html"; }, animateSpeed);
         };
         document.getElementById("aboutb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./about.html"; }, animateSpeed);
         };
         document.getElementById("travelb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./travel.html"; }, animateSpeed);
         };
         document.getElementById("safetyb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./safety.html"; }, animateSpeed);
         };
         document.getElementById("vehiclesb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./vehicles.html"; }, animateSpeed);
         };
         document.getElementById("visitb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./visit.html"; }, animateSpeed);
         };
         document.getElementById("refb").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./references.html"; }, animateSpeed);
         };
         document.getElementById("rightbutton1").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./book.html"; }, animateSpeed);
         };
         document.getElementById("rightbutton2").onmousedown = function(){
-            document.getElementById("paget").style = "left: 0; width:100%";
-            document.getElementById("pagettext").style = "opacity: 1";
+            pagetrans();
             setTimeout(function(){ window.location.href = "./login.html"; }, animateSpeed);
         };
         /*index buttons*/

@@ -1,31 +1,31 @@
-document.getElementById("secbutton").onmousedown = function(){
+function pagetrans() {
   document.getElementById("paget").style = "left: 0; width:100%";
   document.getElementById("pagettext").style = "opacity: 1";
+  document.getElementById("loadcircle").style = "opacity: 1;";
+}
+
+document.getElementById("secbutton").onmousedown = function(){
+  pagetrans();
   setTimeout(function(){ window.location.href = "./about.html"; }, animateSpeed);
 };
 document.getElementById("secbutton1").onmousedown = function(){
-  document.getElementById("paget").style = "left: 0; width:100%";
-  document.getElementById("pagettext").style = "opacity: 1";
+  pagetrans();
   setTimeout(function(){ window.location.href = "./safety.html"; }, animateSpeed);
 };
 document.getElementById("secbutton2").onmousedown = function(){
-  document.getElementById("paget").style = "left: 0; width:100%";
-  document.getElementById("pagettext").style = "opacity: 1";
+  pagetrans();
   setTimeout(function(){ window.location.href = "./visit.html"; }, animateSpeed);
 };
 document.getElementById("toption").onmousedown = function(){
-  document.getElementById("paget").style = "left: 0; width:100%";
-  document.getElementById("pagettext").style = "opacity: 1";
+  pagetrans();
   setTimeout(function(){ window.location.href = "./travel.html"; }, animateSpeed);
 };
 document.getElementById("toption1").onmousedown = function(){
-  document.getElementById("paget").style = "left: 0; width:100%";
-  document.getElementById("pagettext").style = "opacity: 1";
+  pagetrans();
   setTimeout(function(){ window.location.href = "./travel.html"; }, animateSpeed);
 };
 document.getElementById("vehiclebutton").onmousedown = function(){
-  document.getElementById("paget").style = "left: 0; width:100%";
-  document.getElementById("pagettext").style = "opacity: 1";
+  pagetrans();
   setTimeout(function(){ window.location.href = "./vehicles.html"; }, animateSpeed);
 };
 

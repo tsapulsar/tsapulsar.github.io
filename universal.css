@@ -54,7 +54,6 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    animation: rotation 15s infinite;
 }
 
 @keyframes rotation {
@@ -104,7 +103,38 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+#paget1 {
+    margin-top: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#loadcircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-top: -300px;
+    border: 6px solid var(--second);
+    border-top: transparent;
+    border-left: transparent;
+    transition: 0.3s;
+    animation: rotation 0.3s infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
 }
 
 #menu {
@@ -145,15 +175,21 @@ body {
 	text-decoration: none;
 	color: white;
     transition: 0.3s;
-	color: var(--second);
+	background: -webkit-linear-gradient(var(--second), var(--third));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 	display: inline-block;
 	border-bottom: 0px solid transparent;
 	border-width: 1px;
 	pointer-events: all;
 	font-weight: 700;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	margin-right: 20px;
 }
+#username:hover {
+    transform: scale(1.1);
+}
+
 #menubutton {
     font-family: "Poppins";
 	display: none;
