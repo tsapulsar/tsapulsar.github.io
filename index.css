@@ -324,7 +324,7 @@
     transition: 0.2s;
 }
 #aimg1 {
-    background: url(./images/about.jpg);
+    background: url(./images/aglamadon.jpg);
     background-size: 120%;
     background-repeat: none;
     background-position: center;
@@ -338,7 +338,7 @@
     transition: 0.2s;
 }
 #aimg3 {
-    background: url(./images/terransurface2.jpg);
+    background: url(./images/sustainability.jpg);
     background-size: 120%;
     background-repeat: none;
     background-position: center;

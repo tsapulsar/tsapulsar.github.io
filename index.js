@@ -29,6 +29,33 @@ document.getElementById("vehiclebutton").onmousedown = function(){
   setTimeout(function(){ window.location.href = "./vehicles.html"; }, animateSpeed);
 };
 
+document.getElementById("ahead1").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./newsletter1.html"; }, animateSpeed);
+};
+document.getElementById("ahead2").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./newsletter2.html"; }, animateSpeed);
+};
+document.getElementById("ahead3").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./newsletter3.html"; }, animateSpeed);
+};
+
+document.getElementById("aimg1").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./newsletter1.html"; }, animateSpeed);
+};
+document.getElementById("aimg2").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./newsletter2.html"; }, animateSpeed);
+};
+document.getElementById("aimg3").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./newsletter3.html"; }, animateSpeed);
+};
+
+
 if (localStorage.getItem("subscribed") == "true") {
   subscribed();
 }

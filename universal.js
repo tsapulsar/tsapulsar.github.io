@@ -23,6 +23,12 @@
                 top: `${clientY + window.scrollY -25}px`
             }, { duration: 400, fill: "forwards" });
         }
+        setInterval(() => {
+            if (localStorage.getItem("loggedIn") == "true") {
+                document.getElementById("rightbutton2").innerHTML = "Log Out";
+            }
+        }, 10);
+        
         
 
         let headerMain = `
@@ -97,6 +103,8 @@
         };
         document.getElementById("rightbutton2").onmousedown = function(){
             pagetrans();
+            localStorage.removeItem("loggedIn");
+            localStorage.setItem("page", "." + "/" + window.location.pathname.split("/").pop());
             setTimeout(function(){ window.location.href = "./login.html"; }, animateSpeed);
         };
         /*index buttons*/

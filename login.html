@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Pulsar - About Us</title>
+    <title>Pulsar - Login</title>
     <link rel='icon' href="./images/logo.png">
     <link rel = "stylesheet" href="universal.css">
-    <link rel = "stylesheet" href="about.css">
+    <link rel = "stylesheet" href="login.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="universal.js"></script>
 </head>
@@ -20,7 +20,25 @@
         </div>
     </div>
         
+    <div id = "loginsec">
+        <div id="left">
+            <p id="titlelogin">PULSAR</p>
+            <p id="titlesub">Redefining Frontiers</p>
+            <p id="copyrightthing">Copyright © 2140 - 2148 PULSAR</p>
+        </div>
+        <div id="right">
+            <p id="logintitle">Login</p>
+            <input type="text" id="uname" name="fname" placeholder="Username">
+            <input type="password" id="pass" name="fname" placeholder="Password">
+            <button id="submitlogin" onclick="submitting()">Log In</button>
+            <p id="error">Incorrect email and/or password</p>
+            <p id="message">Please use <b>John</b> as the username and <b>1234</b> as the password for a demo login.</p>
+            
+        </div>
+    </div>
 
     <header id="footer-main"></header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="login.js"></script>
     <script async src="universal.js"></script>
 </body>
