@@ -3,6 +3,99 @@ body {
     pointer-events:all;
 }
 
+#pagetitle {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+    margin-top: 150px;
+    text-transform: uppercase;
+}
+
+#everything {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 200px;
+}
+
+#nav {
+    position: fixed;
+    height: 500px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 1200px;
+}
+#m1, #m2, #m3 {
+    color: var(--third);
+    font-weight: 600;
+    font-size: 20px;
+}
+#line, #line1 {
+    height: 100px;
+    border: 2px solid var(--second);
+    width: 0;
+    border-radius: 100px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+#line1 {
+    height: 50px;
+}
+
+#whole {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left, #right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#left {
+    width: 600px;
+}
+#right {
+    width: 500px;
+    height: 100%;
+}
+
+#roomimage {
+    width: 500px;
+    aspect-ratio: 10/7;
+    object-fit: cover;
+    border-top: 5px solid var(--third);
+    border-left: 5px solid var(--third);
+    object-position: center;
+}
+#roomtitle {
+    font-size: 25px;
+    color: var(--second);
+    font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+/*
 #back {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(23, 48, 149, 0.6)), url(./images/surface.jpg);
     height: 100vh;
@@ -125,3 +218,6 @@ body {
 }
 
 
+
+
+*/
