@@ -53,7 +53,7 @@
 }
 #boxes {
     position: absolute;
-    top: 250px;
+    height: 200px;
 }
 #box1, #box2 {
     width: 100px;
