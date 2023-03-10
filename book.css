@@ -7,12 +7,17 @@ body {
     font-size: 45px;
     font-weight: 700;
     color: white;
+    padding-top: 15px;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
+    
     text-align: center;
     margin-top: 150px;
     text-transform: uppercase;
+    border-top: 5px solid var(--second);
+    border-right: 5px solid var(--second);
 }
 
 #everything {
@@ -21,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 200px;
@@ -34,7 +39,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 1200px;
+    margin-right: 1300px;
+    top: 200px;
 }
 #m1, #m2, #m3 {
     color: var(--third);
@@ -43,7 +49,7 @@ body {
 }
 #line, #line1 {
     height: 100px;
-    border: 2px solid var(--second);
+    border: 2px solid white;
     width: 0;
     border-radius: 100px;
     margin-top: -15px;
@@ -53,16 +59,19 @@ body {
     height: 50px;
 }
 
-#roomsec, #datesec {
+#roomsec, #datesec, #addresssec {
     width: 1000px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 #roomsec {
     flex-direction: row;
+    align-items: center;
 } 
+#addresssec {
+    margin-top: 100px;
+}
 
 #left, #right {
     display: flex;
@@ -122,13 +131,60 @@ body {
 }
 
 #datehead {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Poppins";
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#disclaimer {
     color: var(--second);
+    margin-top: -30px;
+    font-size: 15px;
+}
+
+#titlewhole {
+    color: white;
     font-weight: 600;
+    font-size: 20px;
+}
+#start, #street, #city, #state {
+    background: Var(--main);
+   width: 400px; 
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid var(--third);
+    border-right: 5px solid var(--third);
+}
+#street, #city, #state {
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+}
+#state {
+    width: 100px;
+    text-transform: uppercase;
 }
 
 
+::-webkit-datetime-edit { 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+::-webkit-datetime-edit-fields-wrapper { background: transparent; }
+::-webkit-datetime-edit-text { color: var(--second); padding: 10px; }
+::-webkit-datetime-edit-month-field { color: white;}
+::-webkit-datetime-edit-day-field { color: var(--third); }
+::-webkit-datetime-edit-year-field { color: white; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { padding-right: 15px; }
 
 
 
