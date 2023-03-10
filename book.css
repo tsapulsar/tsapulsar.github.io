@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +32,6 @@ body {
     height: 500px;
     width: 200px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-right: 1200px;
@@ -53,27 +53,33 @@ body {
     height: 50px;
 }
 
-#whole {
+#roomsec, #datesec {
     width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+#roomsec {
+    flex-direction: row;
+} 
 
 #left, #right {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 600px;
 }
 #left {
     width: 600px;
 }
 #right {
     width: 500px;
-    height: 100%;
 }
 
-#roomimage {
+#roomimage, #roomimage1 {
     width: 500px;
     aspect-ratio: 10/7;
     object-fit: cover;
@@ -81,6 +87,12 @@ body {
     border-left: 5px solid var(--third);
     object-position: center;
 }
+#roomimage1 {
+    border: none;
+    border-top: 5px solid var(--third);
+    border-right: 5px solid var(--third);
+}
+
 #roomtitle {
     font-size: 25px;
     color: var(--second);
@@ -88,8 +100,33 @@ body {
 
 }
 
+#roomselect1, #roomselect2 {
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    border: none;
+    outline: None;
+    border-bottom: 5px solid var(--third);
+    border-left: 5px solid var(--third);
+    color: white;
+    background: var(--mainhover);
+    transition: 0.3s;
+}
+#roomselect1:hover, #roomselect2:hover {
+    transform: scale(1.1);
+    color: var(--third);
+    cursor: pointer;
+}
 
-
+#datehead {
+    font-size: 30px;
+    font-family: "Poppins";
+    color: var(--second);
+    font-weight: 600;
+}
 
 
 

@@ -15,24 +15,34 @@ body {
 
 #news {
     margin-top: 100px;
-    width: 700px;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#newscontent {
+    width: 700px;
     text-align: left;
     font-size: 20px;
 }
 
 #title {
     border: none;
-    width: 100%;
+    width: 1100px;
+    text-align: left;
 }
 
 #authordate {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: -70px;
+    width: 1110px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 #sub, #sub1 {
     margin-left: 20px;
@@ -175,5 +185,25 @@ body {
 }
 #adate {
     font-size: 15px;
+}
+
+
+#socialside {
+    width: 50px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+#socialside:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#newssocials {
+    width: 150px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 

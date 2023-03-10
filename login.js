@@ -18,6 +18,20 @@ function submitting() {
         document.getElementById("error").style = "opacity: 1";
     }
 }
+
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        if (document.getElementById("uname").value == "John" && document.getElementById("pass").value == "1234") {
+            localStorage.setItem("loggedIn", "true");
+            console.log(localStorage.getItem("loggedIn"));
+            pagetrans();
+            setTimeout(function(){ window.location.href = String(localStorage.getItem("page"));; }, animateSpeed);
+        }
+        else {
+            document.getElementById("error").style = "opacity: 1";
+        }
+    }
+});
     
 
 
