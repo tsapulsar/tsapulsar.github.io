@@ -46,6 +46,7 @@ body {
     text-align: center;
 }
 #src {
+    text-decoration: underline;
     color: white;
     text-decoration: none;
     line-height: 40px;
@@ -81,6 +82,7 @@ body {
         width: 800px;
     }
     #src {
+        text-decoration: underline;
         font-size: 40px;
         line-height: 90px;
         width: 100%;

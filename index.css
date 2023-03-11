@@ -597,5 +597,45 @@
     #vehiclebutton {
         font-size: 75px;
     }
+
+    #articles {
+        display: flex;
+        flex-direction: column;
+    }
     
+    #a1{
+        width: 700px;
+        height: 800px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #abox {
+        height: 450px;
+    }
+    #aimg1, #aimg2, #aimg3 {
+        width: 693px;
+        height: 300px;
+    }
+    #adate{
+        font-size: 30px;
+    }
+    #ahead1, #ahead2, #ahead3 {
+        font-size: 60px;
+    }
+
+    #aauthor {
+        font-size: 40px;
+    }
+    #head4 {
+        margin-top: 1250px;
+    }
+    #b4 {
+        height: 2000px;
+        
+    }
+
+    #footer-main{
+        padding-top: 800px;
+        height: 2000px;
+    }
 }

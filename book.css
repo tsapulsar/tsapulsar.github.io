@@ -59,12 +59,18 @@ body {
     height: 50px;
 }
 
-#roomsec, #datesec, #addresssec {
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#roomsec, #datesec, #addresssec, #experiencesec, #rewardssec {
     width: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 #roomsec {
     flex-direction: row;
     align-items: center;
@@ -73,19 +79,13 @@ body {
     margin-top: 100px;
 }
 
-#left, #right {
+#beds {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 600px;
+    flex-direction: row;
 }
-#left {
-    width: 600px;
-}
-#right {
-    width: 500px;
+
+#bed2 {
+    padding-left: 20px;
 }
 
 #roomimage, #roomimage1 {
@@ -109,7 +109,7 @@ body {
 
 }
 
-#roomselect1, #roomselect2 {
+#roomselect1, #roomselect2, #bookflight, #button1, #button2 {
     width: 150px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -124,13 +124,23 @@ body {
     background: var(--mainhover);
     transition: 0.3s;
 }
-#roomselect1:hover, #roomselect2:hover {
+
+#bookflight {
+    width: 200px;
+    margin-top: 100px;
+}
+#button1, #button2 {
+    width: 100px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+#roomselect1:hover, #roomselect2:hover, #bookflight:hover, #button1:hover, #button2:hover {
     transform: scale(1.1);
     color: var(--third);
     cursor: pointer;
 }
 
-#datehead {
+#datehead, #experiencehead, #rewardshead {
     font-size: 35px;
     font-family: "Poppins";
     color: white;
@@ -138,10 +148,15 @@ body {
     text-transform: uppercase;
 }
 
-#disclaimer {
+#disclaimer, #yes, #no {
     color: var(--second);
     margin-top: -30px;
     font-size: 15px;
+}
+
+#yes, #no {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 #titlewhole {
@@ -171,6 +186,7 @@ body {
 }
 
 
+
 ::-webkit-datetime-edit { 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -185,6 +201,37 @@ body {
 ::-webkit-datetime-edit-year-field { color: white; }
 ::-webkit-inner-spin-button { display: none; }
 ::-webkit-calendar-picker-indicator { padding-right: 15px; }
+
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    #pagetitle {
+        margin-top: 300px;
+    }
+
+    #buttons, #beds {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #button1, #button2, #bed1, #bed2 {
+        margin-bottom: 50px;
+    }
+
+    #bed1, #bed2 {
+        padding-left: 0px;
+    }
+
+
+
+}
+
+
+
+
+
 
 
 
@@ -309,8 +356,4 @@ body {
     }
 
 }
-
-
-
-
 */
