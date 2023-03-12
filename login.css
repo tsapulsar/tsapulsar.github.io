@@ -133,7 +133,7 @@ body {
     #loginsec {
         display: flex;
         flex-direction: column;
-        height:1300px;
+        height:900px;
         width: 800px;
         margin-top: 400px;
         
@@ -153,9 +153,10 @@ body {
     }
     #right {
         width: 500px;
+        padding-top: 50px;
         border: 0px;
         margin: 0px;
-        padding: 0px;
+
     }
     
     #titlesub {
@@ -172,7 +173,7 @@ body {
 
     #uname, #pass {
         width: 500px;
-        height: 500px;
+        height: 50px;
         font-size: 30px;
     }
     #submitlogin {
