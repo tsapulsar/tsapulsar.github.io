@@ -10,48 +10,73 @@
     <script src="universal.js"></script>
 </head>
 <body data-aos="none" data-aos-duration="10"  style="transition: 0.01s">
-    <div id="followmouse"></div>
 
-    <header id="menu-main"></header>
-    <div id="paget">
-        <div id="paget1">
-            <p id="pagettext">PULSAR</p>
-            <div id="loadcircle"></div>
+    <div class = "removeOnPrint">
+        <div id="followmouse"></div>
+
+        <header id="menu-main"></header>
+        <div id="paget">
+            <div id="paget1">
+                <p id="pagettext">PULSAR</p>
+                <div id="loadcircle"></div>
+            </div>
         </div>
     </div>
 
     <div id = "confirm">
-        <h1 id="confirmation">Your booking has been confirmed! Thanks for choosing Pulsar.</h1>
-        <h2 id="orderdetails">Order Details:</h2>
+        <h1 id="confirmation" class = "text">Your booking has been confirmed! Thanks for choosing Pulsar.</h1>
+        <h2 id="orderdetails" class = "text">Order Details:</h2>
         <div id = "details">
             <div id = "stuff">
-                <h2>Amount paid:</h2>
-                <h2 id = "right">$2,325 USD</h2>
+                <h2 class = "text">Amount paid:</h2>
+                <h2 id = "right" class = "text">$2,325 USD</h2>
             </div>
             <div id = "stuff">
-                <h2>Date:</h2>
-                <h2 id = "right">March 22, 2043</h2>
+                <h2 class = "text">Date:</h2>
+                <h2 id = "right" class = "text">March 22, 2043</h2>
             </div>
             <div id = "stuff">
-                <h2>Ship:</h2>
-                <h2 id = "right">AVATON MARK IV</h2>
+                <h2 class = "text">Ship:</h2>
+                <h2 id = "right" class = "text">AVATON MARK IV</h2>
             </div>
             <div id = "stuff">
-                <h2>Destination:</h2>
-                <h2 id = "right">AGENON-901</h2>
+                <h2 class = "text">Destination:</h2>
+                <h2 id = "right" class = "text">AGENON-901</h2>
             </div>
             <div id = "stuff">
-                <h2>Rewards Access:</h2>
-                <h2 id = "right">YES</h2>
+                <h2 class = "text">Rewards Access:</h2>
+                <h2 id = "right" class = "text">YES</h2>
             </div>
         </div>
+        
+        <div class = "removeOnPrint" id = "reciept">
+            <button id = "print" onclick="window.print();return false;">Print</button>
+        </div>
     </div>
+
+    <div class = "footer1">
+        <div id = "col1">
+            <h1>PULSAR</h1>
+            <h3>Copyright © 2140 - 2148 PULSAR</h3>
+        </div>
+        <div id = "col2">
+            <h1>Headquarters Location & Mailing Address</h1>
+            <h3>5783 Newport Drive Charlotte NC, 28328</h3>
+        </div>
+        <div id = "col3">
+            <h1>Questions?</h1>
+            <h3>Email: contact@tsapulsar.com</h3>
+            <h3>Phone: 745-473-1365</h3>
+        </div>
+    </div>
+
+    
     
  
     
 
     
-    <header id="footer-main"></header>
+    <header class = "removeOnPrint" id="footer-main"></header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="newsletter1.js"></script>
     <script async src="universal.js"></script>
