@@ -1,4 +1,6 @@
-var date = new Date('03/29/2023 11:59 PM');
+            
+/*
+            var date = new Date('03/29/2023 11:59 PM');
         
             var _second = 1000;
             var _minute = _second * 60;
@@ -20,3 +22,14 @@ var date = new Date('03/29/2023 11:59 PM');
                 document.getElementById('seconds').innerHTML = seconds;
             }
             timer = setInterval(showRemaining, 1000);
+*/
+function whenButtonClicked(object)
+{
+    if(object.style.boxShadow == "red 0px 0px 0px 3px")
+    {
+        object.style.boxShadow = "none";
+    } else 
+    {
+        object.style.boxShadow = "0 0px 0 3px red";
+    }
+}

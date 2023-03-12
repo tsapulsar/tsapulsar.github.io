@@ -9,6 +9,7 @@
     <link rel = "stylesheet" href="book.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="universal.js"></script>
+    <script src="book.js"></script>
 </head>
 <body data-aos="none" data-aos-duration="10"  style="transition: 0.01s">
   <div id="followmouse"></div>
@@ -49,8 +50,8 @@
         <p id="rewardshead">Are you a rewards member?</p>
         <p id="disclaimer">Rewards members get special access to indoor activites and programs</p>
         <div id = "buttons">
-          <button id="button1">Yes</button>
-          <button id="button2">No</button>
+          <button class = "boxes" id="button1" onclick="whenButtonClicked(this)">Yes</button>
+          <button class = "boxes" id="button2" onclick="whenButtonClicked(this)">No</button>
         </div>
     
 
@@ -64,13 +65,13 @@
             <div id = "bed1"> 
               <img id="roomimage" src="./images/room.jpg">
               <p id="roomtitle">1 King Bed Room</p>
-              <button id="roomselect1">Select</button>
+              <button class = "boxes" id="roomselect1" onclick="whenButtonClicked(this)">Select</button>
             </div>
 
             <div id = "bed2">
               <img id="roomimage1" src="./images/room2.jpg">
               <p id="roomtitle">2 Twin Sized Bed Room</p>
-              <button id="roomselect2">Select</button>
+              <button class = "boxes" id="roomselect2" onclick="whenButtonClicked(this)">Select</button>
             </div> 
           </div>
 
@@ -95,7 +96,7 @@
         <input type="text" id="state" maxlength="2" name="trip-start">
       </div>
 
-      <button id="bookflight">Book my Flight!</button>
+      <a href = "./bookingConfirm.html"><button id="bookflight">Book my Flight!</button></a>
     </div>
 
   </div>

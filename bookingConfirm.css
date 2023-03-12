@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(rgb(22, 31, 68), var(--main)), url();
+    pointer-events:all;
+}
+
+
+#confirm {
+    height: 50vh;
+    margin-top: 20vh;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#confirmation, #orderdetails, #details {
+    opacity: 1;
+    color: white;
+    font-weight:bolder;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+
+#stuff {
+    display: flex;
+    flex-direction: row;
+}
+#right{
+    position: absolute;
+    right: 100px;
+}
+#orderdetails {
+    font-size: 20px;
+}
+
+#details {
+    font-size: 15px;
+    margin-left: 100px;
+}
+
