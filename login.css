@@ -128,7 +128,64 @@ body {
 }
 
 
+@media only screen and (max-width: 1024px) {
 
+    #loginsec {
+        display: flex;
+        flex-direction: column;
+        height:900px;
+        width: 800px;
+        margin-top: 400px;
+        
+    }
+
+    #left {
+        border-right: none;
+        border-bottom: 2px solid var(--mainhover);
+        justify-content: center;
+        flex-direction: column;
+        height: 500px;
+        width:500px;
+        text-align: left;
+        margin-bottom: 30px;
+
+      
+    }
+    #right {
+        width: 500px;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #titlesub {
+        font-size: 30px;
+    }
+
+    #copyrightthing {
+        font-size: 20px;
+    }
+
+    #logintitle {
+        font-size: 70px;
+    }
+
+    #uname, #pass {
+        width: 500px;
+        font-size: 30px;
+    }
+    #submitlogin {
+        margin-top: 25px;
+
+        width: 528px;
+        font-size: 30px;
+    }
+    #message {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+}
 
 
 
