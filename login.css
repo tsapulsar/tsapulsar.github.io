@@ -172,6 +172,7 @@ body {
 
     #uname, #pass {
         width: 500px;
+        height: 40px;
         font-size: 30px;
     }
     #submitlogin {
