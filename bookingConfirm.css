@@ -59,6 +59,9 @@ body {
 }
 
 @media print { 
+    
+    @page {size: landscape}
+
     .removeOnPrint {
         display: none;
     }
