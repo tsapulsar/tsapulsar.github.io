@@ -133,7 +133,7 @@ body {
     #loginsec {
         display: flex;
         flex-direction: column;
-        height:900px;
+        height:1300px;
         width: 800px;
         margin-top: 400px;
         
@@ -172,7 +172,7 @@ body {
 
     #uname, #pass {
         width: 500px;
-        height: 40px;
+        height: 500px;
         font-size: 30px;
     }
     #submitlogin {
