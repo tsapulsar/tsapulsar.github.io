@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <p id="pagetitle">Book a Flight</p>
+    <p id="pagetitle">Book a Trip</p>
     <div id="everything">
         
     
@@ -48,18 +48,24 @@
 
       <div id = rewardssec>
         <p id="rewardshead">Are you a rewards member?</p>
-        <p id="disclaimer">Rewards members get special access to indoor activites and programs</p>
         <div id = "buttons">
           <button class = "boxes" id="button1" onclick="whenButtonClicked(this)">Yes</button>
           <button class = "boxes" id="button2" onclick="whenButtonClicked(this)">No</button>
         </div>
-    
-
+        <div id="followup">
+          <p id="rewardshead">Would you like to register to be a Rewards member?</p>
+          <p id="disclaimer">For only $200 USD, rewards members get special access to indoor activites and programs.</p>
+          <div id = "buttons2">
+            <button class = "boxes" id="button3" onclick="whenButtonClicked(this)">Yes</button>
+            <button class = "boxes" id="button4" onclick="whenButtonClicked(this)">No</button>
+          </div>
+        </div>
+        
       </div>
 
         <div id = "experiencesec">
           <p id="experiencehead">Select your experience</p>
-          <p id="disclaimer">Decide how luxurious you want your flights to be</p>
+          <p id="disclaimer">Our rooms are cleaned and organized to perfection.</p>
 
           <div id = "beds"> 
             <div id = "bed1"> 
@@ -87,16 +93,56 @@
 
       <div id="addresssec">
         <p id="datehead">Mailing Address</p>
-        <p id="disclaimer">2148 flights begin on June 22nd, 2148 and end on November 22nd, 2148</p>
         <p id="titlewhole">Street Address</p>
-        <input type="text" id="street" name="trip-start">
+        <input type="text" id="street">
         <p id="titlewhole">City</p>
-        <input type="text" id="city" name="trip-start">
+        <input type="text" id="city">
         <p id="titlewhole">State (Abv.)</p>
-        <input type="text" id="state" maxlength="2" name="trip-start">
+        <input type="text" id="state" maxlength="2">
       </div>
 
-      <a href = "./bookingConfirm.html"><button id="bookflight">Book my Flight!</button></a>
+      <div id="addresssec">
+        <p id="datehead">Payment Information</p>
+        <p id="titlewhole">First Name</p>
+        <input type="text" id="first">
+        <p id="titlewhole">Last Name</p>
+        <input type="text" id="last">
+        <p id="titlewhole">Card Number</p>
+        <input type="number" id="cardnum">
+        <p id="titlewhole">CVV</p>
+        <input type="number" id="cvv" maxlength="3">
+        <p id="titlewhole">Expiration Date</p>
+        <input type="month" id="exdate">
+        <p id="titlewhole">Number of Tickets/Passengers</p>
+        <input type="number" id="numtickets">
+      </div>
+
+      <div id="choices">
+          <div id="choice1">
+              <p id="price">$5499</p>
+              <p id="details">Trip to Dramangode and Vanichor</p>
+              <button id="t1">Select</button>
+          </div>
+          <div id="choice2">
+              <p id="price">$6599</p>
+              <p id="details">Trip to Terran-57 and Agenon-901 </p>
+              <button id="t2">Select</button>
+          </div>
+          <div id="choice3">
+              <p id="price">$7699</p>
+              <p id="details">Trip to Bizzario and a tour of our Solar System.</p>
+              <button id="t3">Select</button>
+          </div>
+      </div>
+
+
+      <div id="total">
+        <p id="labeltotal">Total: </p>
+        <p id="numtotal">$0</p>
+      </div>
+      
+      <p id="error">One or more fields are blank/invalid.</p>
+      <button id="bookflight">Submit and Book</button>
     </div>
 
   </div>
