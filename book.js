@@ -24,6 +24,8 @@ document.getElementById("m4").onmousedown = function() {
 };
 
 
+var width = window.screen.width;
+
 var rewardsfilled = false;
 var rewards = 0;
 document.getElementById("button1").onmousedown = function(){
@@ -34,13 +36,26 @@ document.getElementById("button1").onmousedown = function(){
   rewardsfilled = true;
   rewards = 0;
 };
-document.getElementById("button2").onmousedown = function(){
-  document.getElementById("button2").style = "filter: grayscale(0%)";
-  document.getElementById("button1").style = "filter: grayscale(100%)";
-  document.getElementById("followup").style = "opacity: 1; height: 200px; margin-top: 50px;";
-  rewards = 0;
-  rewardsfilled = true;
-};
+
+if (width < 1024) {
+  document.getElementById("button2").onmousedown = function(){
+    document.getElementById("button2").style = "filter: grayscale(0%)";
+    document.getElementById("button1").style = "filter: grayscale(100%)";
+    document.getElementById("followup").style = "opacity: 1; height: 800px; margin-top: 50px; padding-bottom: 50px;";
+    rewards = 0;
+    rewardsfilled = true;
+  };
+}
+else {
+  document.getElementById("button2").onmousedown = function(){
+    document.getElementById("button2").style = "filter: grayscale(0%)";
+    document.getElementById("button1").style = "filter: grayscale(100%)";
+    document.getElementById("followup").style = "opacity: 1; height: 200px; margin-top: 50px;";
+    rewards = 0;
+    rewardsfilled = true;
+  };
+}
+
 document.getElementById("button3").onmousedown = function() {
   document.getElementById("button3").style = "filter: grayscale(0%)";
   document.getElementById("button4").style = "filter: grayscale(100%)";
@@ -179,6 +194,24 @@ document.getElementById("bookflight").onmousedown = function(){
 
 
 };
+setInterval(() => {
+  if (window.scrollY > 3300) {
+    document.getElementById("nav").style = "top: 0; ";
+    document.getElementById("line").style = "height: 0";
+    document.getElementById("line1").style = "height: 0";
+    document.getElementById("linex").style = "height: 0";
+    document.getElementById("liney").style = "height: 0";
+  }
+  else {
+    document.getElementById("nav").style = "top: 150px";
+    document.getElementById("line").style = "height: 100px";
+    document.getElementById("linex").style = "height: 100px";
+    document.getElementById("liney").style = "height: 100px";
+    document.getElementById("line1").style = "height: 50px";
+  }
+}, 50);
+
+
 
 
 

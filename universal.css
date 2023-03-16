@@ -166,7 +166,36 @@ body {
 }
 
 #header-main {
-    margin-top: 15px;
+    width: 100%;
+    margin-right: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu-right {
+    margin-right: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    position: fixed;
+}
+.menu-link {
+    margin-left: 20px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	pointer-events: all;
+    font-weight: 600;
+}
+.menu-link:hover {
+	color: var(--second);
+	border-bottom: 3px solid var(--third);
+    cursor: pointer;
 }
 
 #username {
@@ -216,28 +245,7 @@ body {
 #first-tab {
 	margin-left: 20px;
 }
-.menu-link {
-    margin-left: 20px;
-	margin-top: 5px;
-	font-size: 18px;
-	text-decoration: none;
-	color: white;
-	transition: 0.3s;
-	display: inline-block;
-	border-bottom: 3px solid transparent;
-	pointer-events: all;
-}
 
-#menu-right {
-    margin-right: 100px;
-}
-
-
-.menu-link:hover {
-	color: var(--second);
-	border-bottom: 3px solid var(--second);
-    cursor: pointer;
-}
 
 #rightbutton1, #rightbutton2 {
 	font-size: 18px;
@@ -382,13 +390,22 @@ body {
     html,body{
         overflow-x: hidden;
     }
+    #loadcircle {
+        margin-top: -100px;
+        width: 150px;
+        height: 150px;
+        border-width: 10px;
+        border-radius: 1000px;
+    }
+
     #menu {
         height: 180px;
         width: 100vw;
         display: block;
         transition: 0.3s;
         overflow: hidden;
-        padding-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
 		background: rgb(31, 40, 65);
     }
     #menucontent {
@@ -433,6 +450,50 @@ body {
         padding-bottom: 40px;
         margin-top: 30px;
 
+    }
+    #header-main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        width: 80%;
+        margin-top: 50px;
+    }
+    .menu-link {
+        font-size:45px;
+        margin-top: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: right;
+        width: 80%;
+        border-width: 10px;
+        padding-bottom: 10px;
+    }
+    .menu-link:hover {
+        border-width: 10px;
+        border-color: var(--third);
+    }
+    #menu-right {
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+    }
+    #rightbutton1, #rightbutton2 {
+        font-size: 45px;
+        border-width: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #rightbutton2 {
+        margin-left: 20px;
     }
 }
 

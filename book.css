@@ -12,7 +12,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    
     text-align: center;
     margin-top: 150px;
     text-transform: uppercase;
@@ -41,6 +40,8 @@ body {
     flex-direction: column;
     margin-right: 1300px;
     top: 150px;
+    transition: 0.3s;
+    z-index: 100;
 }
 #m1, #m2, #m3, #m4 {
     color: var(--third);
@@ -54,13 +55,14 @@ body {
 }
 
 
-#line, #line1 {
+#line, #linex, #liney, #line1 {
     height: 100px;
     border: 2px solid white;
     width: 0;
     border-radius: 100px;
     margin-top: -15px;
     margin-bottom: -15px;
+    transition: 0.3s;
 }
 #line1 {
     height: 50px;
@@ -327,26 +329,120 @@ body {
 
 @media only screen and (max-width: 1024px) {
 
-
     #pagetitle {
-        margin-top: 300px;
+        margin-top: 350px;
+        font-size: 100px;
+        border-width: 10px;
+        width: 80%;
     }
-
-    #buttons, #beds {
+    #roomsec, #datesec, #addresssec, #experiencesec, #rewardssec, #choices, #total {
+        width: 80%;
+        margin-left: -500px;
         display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #rewardssec {
+        margin-top: -150px;
+    }
+    #rewardshead, #experiencehead, #datehead, #datehead1 {
+        font-size: 60px;
+        width: 100%;
+        margin-top: 150px;
+    }
+    #buttons {
+        width: 100%;
+    }
+    #button1, #button2, #button3, #button4, #roomselect1, #roomselect2 {
+        width: 250px;
+        height: 150px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    #disclaimer {
+        font-size: 35px;
+    }
+    #beds {
         flex-direction: column;
     }
-
-    #button1, #button2, #bed1, #bed2 {
-        margin-bottom: 50px;
+    #roomimage, #roomimage1 {
+        width: 90%;
     }
-
     #bed1, #bed2 {
-        padding-left: 0px;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+    #roomtitle {
+        font-size: 40px;
+    }
+    #titlewhole {
+        font-size: 40px;
+    }
+    #street, #start, #city, #state, #first, #last, #numtickets, #cardnum, #cvv, #exdate, #zip {
+        height: 70px;
+        width: 80%;
+        font-size: 35px;
+    }
+    #state, #cvv, #numtickets {
+        width: 200px;
     }
 
 
+    #choices {
+        margin-top: 200px;
+    }
 
+    #choice1, #choice2, #choice3 {
+        border-right: 10px solid var(--second);
+        border-bottom: 10px solid var(--second);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 600px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 200px;
+        margin-top: -100px;
+        padding-bottom: 200px;
+    }
+
+    #price {
+        font-size: 100px;
+    }
+
+    #details {
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    #t1, #t2, #t3 {
+        font-size: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #total {
+        flex-direction: row;
+        font-size: 50px;
+        margin-top: -100px;
+    }
+    #bookflight, #error {
+        margin-left: -500px;
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
+    #bookflight {
+        margin-top: 0px;
+        width: 500px;
+        height: 150px;
+    }
 }
 
 
