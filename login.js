@@ -1,4 +1,6 @@
-
+if (localStorage.getItem("loggedIn") == "true") {
+    window.location.href = "./index.html"; ;
+  }
 
 function pagetrans() {
     document.getElementById("paget").style = "left: 0; width:100%";
@@ -8,7 +10,7 @@ function pagetrans() {
   
 
 function submitting() {
-    if (document.getElementById("uname").value == "John" && document.getElementById("pass").value == "1234") {
+    if (document.getElementById("uname").value == "john@site.com" && document.getElementById("pass").value == "1234") {
         localStorage.setItem("loggedIn", "true");
         console.log(localStorage.getItem("loggedIn"));
         pagetrans();
@@ -21,7 +23,7 @@ function submitting() {
 
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
-        if (document.getElementById("uname").value == "John" && document.getElementById("pass").value == "1234") {
+        if (document.getElementById("uname").value == "john@site.com" && document.getElementById("pass").value == "1234") {
             localStorage.setItem("loggedIn", "true");
             console.log(localStorage.getItem("loggedIn"));
             pagetrans();

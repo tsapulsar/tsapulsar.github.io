@@ -1,3 +1,28 @@
+function pagetrans() {
+    document.getElementById("paget").style = "left: 0; width:100%";
+    document.getElementById("pagettext").style = "opacity: 1";
+    document.getElementById("loadcircle").style = "opacity: 1;";
+}
+
+localStorage.setItem("bookselected", "none");
+
+document.getElementById("book").onmousedown = function(){
+    localStorage.setItem("bookselected", "one");
+    pagetrans();
+    setTimeout(function(){ window.location.href = "./book.html"; }, animateSpeed);
+};
+document.getElementById("book1").onmousedown = function(){
+    localStorage.setItem("bookselected", "two");
+    pagetrans();
+    setTimeout(function(){ window.location.href = "./book.html"; }, animateSpeed);
+};
+document.getElementById("book2").onmousedown = function(){
+    localStorage.setItem("bookselected", "three");
+    pagetrans();
+    setTimeout(function(){ window.location.href = "./book.html"; }, animateSpeed);
+};
+
+
 var c1 = 0;
 var c2 = 0;
 var c3 = 0;

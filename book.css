@@ -42,11 +42,18 @@ body {
     margin-right: 1300px;
     top: 150px;
 }
-#m1, #m2, #m3 {
+#m1, #m2, #m3, #m4 {
     color: var(--third);
     font-weight: 600;
     font-size: 20px;
+    transition: 0.3s;
 }
+#m1:hover, #m2:hover, #m3:hover, #m4:hover {
+    color: var(--second);
+    cursor: pointer;
+}
+
+
 #line, #line1 {
     height: 100px;
     border: 2px solid white;
@@ -147,6 +154,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     opacity: 0;
+    transition: 0.3s;
 }
 #bookflight {
     width: 220px;
@@ -163,7 +171,7 @@ body {
     cursor: pointer;
 }
 
-#datehead, #experiencehead, #rewardshead {
+#datehead, #datehead1, #experiencehead, #rewardshead {
     font-size: 35px;
     font-family: "Poppins";
     color: white;
@@ -187,7 +195,7 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
-#street, #city, #state, #first, #last, #numtickets, #cardnum, #cvv, #exdate {
+#street, #city, #state, #first, #last, #numtickets, #cardnum, #cvv, #exdate, #zip {
     background: Var(--main);
     width: 400px; 
     font-family: "Poppins";

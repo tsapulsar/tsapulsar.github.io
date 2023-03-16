@@ -24,33 +24,46 @@
     </div>
 
     <div id = "confirm">
-        <h1 id="confirmation" class = "text">Your booking has been confirmed! Thanks for choosing Pulsar.</h1>
+        <h1 id="confirmation" class = "text">Your booking has been confirmed. <br>Thanks for choosing Pulsar.</h1>
         <h2 id="orderdetails" class = "text">Order Details:</h2>
         <div id = "details">
             <div id = "stuff">
-                <h2 class = "text">Amount paid:</h2>
-                <h2 id = "right" class = "text">$2,325 USD</h2>
+                <h2 class = "text" id="infohead">Amount paid:</h2>
+                <h2 class = "text" id="totalt">---</h2>
             </div>
             <div id = "stuff">
-                <h2 class = "text">Date:</h2>
-                <h2 id = "right" class = "text">March 22, 2043</h2>
+                <h2 class = "text" id="infohead">Date:</h2>
+                <h2 class = "text" id="datet">---</h2>
             </div>
             <div id = "stuff">
-                <h2 class = "text">Ship:</h2>
-                <h2 id = "right" class = "text">AVATON MARK IV</h2>
+                <h2 class = "text" id="infohead">Room:</h2>
+                <h2 class = "text" id="roomt">---</h2>
             </div>
             <div id = "stuff">
-                <h2 class = "text">Destination:</h2>
-                <h2 id = "right" class = "text">AGENON-901</h2>
+                <h2 class = "text" id="infohead">Number of Tickets:</h2>
+                <h2 class = "text" id="numticketst">---</h2>
             </div>
             <div id = "stuff">
-                <h2 class = "text">Rewards Access:</h2>
-                <h2 id = "right" class = "text">YES</h2>
+                <h2 class = "text" id="infohead">Destinations:</h2>
+                <h2 class = "text" id="dest">---</h2>
+            </div>
+            <div id = "stuff">
+                <h2 class = "text" id="infohead">Rewards Access:</h2>
+                <h2 class = "text" id="rewardst">---</h2>
+            </div>
+            <div id = "stuff">
+                <h2 class = "text" id="infohead">Order ID:</h2>
+                <h2 class = "text" id="ordert">---</h2>
             </div>
         </div>
         
-        <div class = "removeOnPrint" id = "reciept">
-            <button id = "print" onclick="window.print();return false;">Print</button>
+        <div class = "removeOnPrint" id = "receipt">
+            <button id = "print" onclick="window.print(); return false;">Print</button>
+        </div>
+
+        <div id="links">
+            <a id="option"><p id="arrow" >></p>Home</a>
+            <a id="option1"><p id="arrow">></p>Visit Us</a>
         </div>
     </div>
 
@@ -78,6 +91,6 @@
     
     <header class = "removeOnPrint" id="footer-main"></header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="newsletter1.js"></script>
+    <script src="bookingConfirm.js"></script>
     <script async src="universal.js"></script>
 </body>

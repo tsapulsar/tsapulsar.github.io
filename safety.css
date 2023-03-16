@@ -52,7 +52,7 @@ body {
     color: white;
     margin-left: 20px;
 }
-#listing, #listings, #listing1,#listing2 {
+#listing, #listings, #listing1, #listing11, #listing2 {
     margin-top: -120px;
     display: flex;
     width: 900px;
@@ -61,10 +61,15 @@ body {
     padding-bottom: 50px;
     align-items: center;
 }
-#listings, #listing1, #listing2 {
+#listings, #listing2, #listing11 {
     margin-top: -150px;
 }
 #listing1 {
+    border-right: 6px solid var(--second);
+    border-bottom: 6px solid var(--second);
+}
+#listing11 {
+    
     border-right: 6px solid var(--second);
     border-bottom: 6px solid var(--second);
 }
