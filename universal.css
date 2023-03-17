@@ -42,40 +42,19 @@ body {
 }
 
 #followmouse {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
+    width: 20px;
+    height: 20px;
     position: absolute;
     text-align: center;
-    border: 5px solid var(--second);
-    animation: rotation 15s infinite;
+    border-top: 7px solid var(--second);
+    border-left: 7px solid var(--second);
     z-index: 100000;
     pointer-events: none;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(15deg);
 }
 
-@keyframes rotation {
-    0% {
-
-    }
-    20% {
-
-    }
-    40% {
-
-    }
-    60% {
-        
-    }
-    80% {
-
-    }
-    100% {
-
-    }
-}
 
 #paget {
     width: 100%;
@@ -301,8 +280,8 @@ body {
 }
 
 #title {
-    border-bottom: 4px solid var(--second);
-    border-left: 4px solid var(--second);
+    border-bottom: 4px solid var(--third);
+    border-left: 4px solid var(--third);
     width: 700px;
     text-align: center;
     margin-left: auto;

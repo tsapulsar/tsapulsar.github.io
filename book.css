@@ -211,6 +211,10 @@ body {
     color: white;
     font-size: 17px;
 }
+#zip {
+    width: 100px;
+    text-align: center;
+}
 #start {
     background: Var(--main);
     width: 400px; 
@@ -223,8 +227,9 @@ body {
     border-right: 5px solid var(--third);
 }
 
-#state, #numtickets {
-    width: 100px;
+#state, #numtickets, #cvv {
+    width: 50px;
+    text-align: center;
     text-transform: uppercase;
 }
 

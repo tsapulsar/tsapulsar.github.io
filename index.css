@@ -23,7 +23,7 @@
     border: none;
     border-right: 5px solid white;
     background: transparent;
-    color: var(--second);
+    color: var(--third);
     font-size: 60px;
     font-weight: 700;
     font-family: "Poppins";
@@ -154,20 +154,21 @@
 }
 #secbutton, #secbutton1, #secbutton2 {
     font-size: 600px;
-    color: white;
     font-weight: 600;
     margin-top: -175px;
     margin-left: -40px;
     transition: 0.3s;
+    color: transparent;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: var(--third);
     text-decoration: none;
     
 }
 #secbutton:hover, #secbutton1:hover, #secbutton2:hover {
     transform: scale(1.1);
     cursor: pointer;
-    color: transparent;
-    -webkit-text-stroke-width: 10px;
-    -webkit-text-stroke-color: var(--third);
+    color: white;
+    -webkit-text-stroke-color: transparent;
 }
 #buttonsub {
     font-size: 30px;

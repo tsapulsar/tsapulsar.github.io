@@ -25,8 +25,8 @@ body {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 6px solid var(--third);
-    border-left: 6px solid var(--third);
+    border-top: 6px solid var(--second);
+    border-left: 6px solid var(--second);
     color: white;
     text-align: center;
 }

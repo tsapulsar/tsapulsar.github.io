@@ -24,8 +24,8 @@
         window.onpointermove = event => { 
             const { clientX, clientY } = event;
             blob.animate({
-                left: `${clientX - 15}px`,
-                top: `${clientY + window.scrollY -25}px`
+                left: `${clientX + 10}px`,
+                top: `${clientY + window.scrollY + 15}px`
             }, { duration: 400, fill: "forwards" });
         }
         setInterval(() => {
