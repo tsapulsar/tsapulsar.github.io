@@ -66,8 +66,8 @@ document.getElementById("roomheader").onmousedown = function(){
         document.getElementById("qa2").style = "height: 550px;padding-top: 50px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;border-bottom: 6px solid var(--third);border-right: 6px solid var(--third);";
         document.getElementById("q2").style = "height: 550px";
         if (window.innerWidth < 1024) {
-            document.getElementById("q2").style = "height: 1400px; width: 100%; padding-top: 50px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;border-bottom: 6px solid var(--third);border-right: 6px solid var(--third);";
-            document.getElementById("qa2").style = "height: 1400px";
+            document.getElementById("q2").style = "height: 2000px; width: 100%; padding-top: 50px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;border-bottom: 6px solid var(--third);border-right: 6px solid var(--third);";
+            document.getElementById("qa2").style = "height: 2000px";
         }
         c2++;
     } 
@@ -128,3 +128,25 @@ document.getElementById("foodheader").onmousedown = function(){
         c5++;
     }
 };
+var date = new Date('06/22/2023 12:00 AM');
+        
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+    var now = new Date();
+    var distance = date - now;
+    var days = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    var minutes = Math.floor((distance % _hour) / _minute);
+    var seconds = Math.floor((distance % _minute) / _second);
+
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+}
+timer = setInterval(showRemaining, 1000);

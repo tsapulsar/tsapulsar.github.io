@@ -138,11 +138,13 @@ body {
         padding-bottom: 400px;
         margin-top: 400px;
         
+        border-width: 10px;
     }
 
     #left {
         border-right: none;
         border-bottom: 2px solid var(--mainhover);
+        border-width: 10px;
         justify-content: center;
         flex-direction: column;
         height: 500px;
@@ -154,7 +156,7 @@ body {
     }
     #right {
         width: 500px;
-        padding-top: 100px;
+        padding-top: 200px;
         border: 0px;
         margin: 0px;
         text-align: center;
@@ -184,8 +186,10 @@ body {
         width: 528px;
         font-size: 50px;
         padding-top: 30px;
-        height: 100px;
         padding-bottom: 30px;
+        height: 150px;
+        padding-bottom: 30px;
+        border-width: 10px;
     }
     #message {
         margin-top: 0px;

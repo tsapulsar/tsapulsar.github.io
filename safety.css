@@ -100,6 +100,7 @@ body {
     }
     #title {
         font-size: 100px;
+        border-width: 10px;
     }
     #sub {
         font-size: 40px;
@@ -110,6 +111,10 @@ body {
         margin: 0;
         padding: 0;
         margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-right: 160px;
     }
     #header, #header1 {
         font-size: 80px;
@@ -118,19 +123,21 @@ body {
         padding-top: 50px;
         width: 900px;
         margin: auto;
+        border-width: 10px;
     }
     #header1 {
         font-size: 60px;
     }
-    #listing, #listing1, #listings, #listing2 {
+    #listing, #listing1, #listings, #listing2, #listing11 {
         padding: 0;
         margin: 0;
         width: 900px;
         margin: auto;
         margin-top: 30px;
     }
-    #listing1, #listing2 {
+    #listing1, #listing2, #listing11 {
         padding-bottom: 50px;
+        border-width: 10px;
     }
     #num {
         width: 50px;

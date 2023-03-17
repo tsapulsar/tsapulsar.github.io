@@ -5,13 +5,55 @@ body {
 
 #back {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(23, 48, 149, 0.3)), url(./images/travel.jpg);
-    height: 500px;
+    height: 650px;
     margin-top: -30px;
     background-position: bottom right;
     padding-top: 100px;
     text-align: center;
     margin-bottom: 100px;
 }
+
+
+#countdown {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#timesection {
+    font-family: "Poppins";
+    margin-left: -1px;
+    margin-right: -1px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 2px solid rgb(51, 72, 119);
+    border-right: 2px solid rgb(51, 72, 119);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#days, #hours, #minutes, #seconds {
+    color: var(--third);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#word {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+    text-transform: uppercase; 
+}
+
+#sub1 {
+    color: white;
+    font-size: 20px;
+}
+
 
 #section {
     width: 1000px;
@@ -35,6 +77,9 @@ body {
     margin-top: 0;
     text-align: center;
 }
+
+
+
 
 #planet {
     margin-top: 50px;
@@ -277,11 +322,23 @@ body {
     }
     #title {
         font-size: 100px;
+        border-width: 10px;
     }
-    #sub {
+    #sub, #sub1 {
         font-size: 40px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    #timesection {
+        height: 250px;
+        width: 200px;
+    }
+    #days, #hours, #minutes, #seconds {
+        font-size: 70px;
+    }
+    #word {
+        font-size: 40px;
     }
 
     #header {
@@ -307,6 +364,7 @@ body {
 
     .planetinfo {
         border-left: 6px solid var(--second);
+        border-width: 10px;
         margin-left: 50px;
         margin-right: 70px;
         padding-bottom: 150px;
@@ -334,13 +392,14 @@ body {
         text-align: center;
         align-items: center;
         justify-content: center;
-        width: 500px;
-        height: 600px;
+        width: 400px;
+        height: 650px;
         padding-left: 100px;
         padding-right: 100px;
         margin-bottom: 200px;
         margin-top: -100px;
         padding-bottom: 100px;
+        border-width: 10px;
     }
 
     #price {
@@ -360,6 +419,7 @@ body {
         padding-right: 50px;
         padding-top: 30px;
         padding-bottom: 30px;
+        border-width: 10px;
     }
 
     #qa {
@@ -368,6 +428,7 @@ body {
     }
     .qaheader {
         margin-top: 50px;
+        border-width: 10px;
         height: 200px;
         font-size: 65px;
         text-align: center;
@@ -407,6 +468,7 @@ body {
         width: 600px;
         height: 400px;
         margin-top: 50px;
+        border-width: 10px;
     }
 
 

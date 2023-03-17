@@ -71,6 +71,7 @@ body {
     }
     #title {
         font-size: 100px;
+        border-width: 10px;
     }
     #header {
         font-size: 100px;

@@ -44,7 +44,7 @@ body {
 #followmouse {
     width: 20px;
     height: 20px;
-    position: absolute;
+    position: fixed;
     text-align: center;
     border-top: 7px solid var(--second);
     border-left: 7px solid var(--second);
@@ -376,7 +376,9 @@ body {
         border-width: 10px;
         border-radius: 1000px;
     }
-
+    #contactlink:hover {
+        cursor: pointer;
+    }
     #menu {
         height: 180px;
         width: 100vw;
