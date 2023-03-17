@@ -438,16 +438,16 @@ body {
         flex-direction: column;
         justify-content: start;
         align-items: end;
-        width: 80%;
+        width: 85%;
         margin-top: 50px;
     }
     .menu-link {
         font-size:45px;
-        margin-top: 10px;
         font-weight: 600;
         text-transform: uppercase;
         text-align: right;
-        width: 80%;
+        width: 50%;
+        margin-top: 5px;
         border-width: 10px;
         padding-bottom: 10px;
     }
