@@ -51,8 +51,9 @@ body {
     font-size: 18px;
     color: white;
     margin-left: 20px;
+    width: 900px;
 }
-#listing, #listings, #listing1,#listing2 {
+#listing, #listings, #listing1, #listing11, #listing2 {
     margin-top: -120px;
     display: flex;
     width: 900px;
@@ -61,10 +62,15 @@ body {
     padding-bottom: 50px;
     align-items: center;
 }
-#listings, #listing1, #listing2 {
+#listings, #listing2, #listing11 {
     margin-top: -150px;
 }
 #listing1 {
+    border-right: 6px solid var(--second);
+    border-bottom: 6px solid var(--second);
+}
+#listing11 {
+    
     border-right: 6px solid var(--second);
     border-bottom: 6px solid var(--second);
 }
@@ -75,7 +81,9 @@ body {
 #num {
     font-size: 50px;
     font-weight: 700;
+    width: 50px;
     color: var(--third);
+    text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -92,6 +100,7 @@ body {
     }
     #title {
         font-size: 100px;
+        border-width: 10px;
     }
     #sub {
         font-size: 40px;
@@ -102,6 +111,10 @@ body {
         margin: 0;
         padding: 0;
         margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-right: 160px;
     }
     #header, #header1 {
         font-size: 80px;
@@ -110,19 +123,21 @@ body {
         padding-top: 50px;
         width: 900px;
         margin: auto;
+        border-width: 10px;
     }
     #header1 {
         font-size: 60px;
     }
-    #listing, #listing1, #listings, #listing2 {
+    #listing, #listing1, #listings, #listing2, #listing11 {
         padding: 0;
         margin: 0;
         width: 900px;
         margin: auto;
         margin-top: 30px;
     }
-    #listing1, #listing2 {
+    #listing1, #listing2, #listing11 {
         padding-bottom: 50px;
+        border-width: 10px;
     }
     #num {
         width: 50px;

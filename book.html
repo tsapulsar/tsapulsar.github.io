@@ -22,11 +22,10 @@
         </div>
     </div>
 
-    <p id="pagetitle">Book a Flight</p>
+    <p id="pagetitle">Book a Trip</p>
     <div id="everything">
         
     
-      <div id="whole">
         <div id="roomsec">
           <div id="nav">
               <div id="line1"></div>
@@ -35,43 +34,48 @@
               <div id="line"></div>
               
               <p id="m2">Date</p>
-              <div id="line"></div>
+              <div id="linex"></div>
 
               <p id="m3">Address</p>
-              <div id="line"></div>
+              <div id="liney"></div>
 
-              <p id="m3">Billing</p>
+              <p id="m4">Billing</p>
               <div id="line1"></div>
           </div>
         </div>
-      </div>
 
       <div id = rewardssec>
         <p id="rewardshead">Are you a rewards member?</p>
-        <p id="disclaimer">Rewards members get special access to indoor activites and programs</p>
         <div id = "buttons">
-          <button class = "boxes" id="button1" onclick="whenButtonClicked(this)">Yes</button>
-          <button class = "boxes" id="button2" onclick="whenButtonClicked(this)">No</button>
+          <button class = "boxes" id="button1">Yes</button>
+          <button class = "boxes" id="button2">No</button>
         </div>
-    
-
+        <div id="followup">
+          <p id="rewardshead">Would you like to register to be a Rewards member?</p>
+          <p id="disclaimer">For only $299 USD, rewards members get special access to indoor activites and programs.</p>
+          <div id = "buttons2">
+            <button class = "boxes" id="button3">Yes</button>
+            <button class = "boxes" id="button4">No</button>
+          </div>
+        </div>
+        
       </div>
 
         <div id = "experiencesec">
           <p id="experiencehead">Select your experience</p>
-          <p id="disclaimer">Decide how luxurious you want your flights to be</p>
+          <p id="disclaimer">Our rooms are cleaned and organized to perfection.</p>
 
           <div id = "beds"> 
             <div id = "bed1"> 
               <img id="roomimage" src="./images/room.jpg">
               <p id="roomtitle">1 King Bed Room</p>
-              <button class = "boxes" id="roomselect1" onclick="whenButtonClicked(this)">Select</button>
+              <button class = "boxes" id="roomselect1">Select</button>
             </div>
 
             <div id = "bed2">
               <img id="roomimage1" src="./images/room2.jpg">
               <p id="roomtitle">2 Twin Sized Bed Room</p>
-              <button class = "boxes" id="roomselect2" onclick="whenButtonClicked(this)">Select</button>
+              <button class = "boxes" id="roomselect2">Select</button>
             </div> 
           </div>
 
@@ -87,16 +91,68 @@
 
       <div id="addresssec">
         <p id="datehead">Mailing Address</p>
-        <p id="disclaimer">2148 flights begin on June 22nd, 2148 and end on November 22nd, 2148</p>
         <p id="titlewhole">Street Address</p>
-        <input type="text" id="street" name="trip-start">
+        <input type="text" id="street">
         <p id="titlewhole">City</p>
-        <input type="text" id="city" name="trip-start">
+        <input type="text" id="city">
         <p id="titlewhole">State (Abv.)</p>
-        <input type="text" id="state" maxlength="2" name="trip-start">
+        <input type="text" id="state" maxlength="2">
+        <p id="titlewhole">ZIP Code</p>
+        <input type="text" id="zip"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number"
+        maxlength = "5">
       </div>
 
-      <a href = "./bookingConfirm.html"><button id="bookflight">Book my Flight!</button></a>
+      <div id="addresssec">
+        <p id="datehead1">Payment Information</p>
+        <p id="disclaimer">We accept VISA, Mastercard, and Discover cards for payment.</p>
+        <p id="titlewhole">First Name</p>
+        <input type="text" id="first">
+        <p id="titlewhole">Last Name</p>
+        <input type="text" id="last">
+        <p id="titlewhole">Card Number</p>
+        <input type="number" id="cardnum"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number"
+        maxlength = "16">
+        <p id="titlewhole">CVV</p>
+        <input id="cvv" 
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number"
+        maxlength = "3">
+        <p id="titlewhole">Expiration Date</p>
+        <input type="month" value="2148-03" min="2148-03" max="2155-01" id="exdate">
+        <p id="titlewhole">Number of Tickets/Passengers</p>
+        <input type="number"  value="1" min="1" id="numtickets">
+      </div>
+
+      <div id="choices">
+          <div id="choice1">
+              <p id="price">$5499</p>
+              <p id="details">Trip to Dramangode and Vanichor</p>
+              <button id="t1">Select</button>
+          </div>
+          <div id="choice2">
+              <p id="price">$6599</p>
+              <p id="details">Trip to Terran-57 and Agenon-901 </p>
+              <button id="t2">Select</button>
+          </div>
+          <div id="choice3">
+              <p id="price">$7699</p>
+              <p id="details">Trip to Bizzario and a tour of our Solar System.</p>
+              <button id="t3">Select</button>
+          </div>
+      </div>
+
+
+      <div id="total">
+        <p id="labeltotal">Total: </p>
+        <p id="numtotal">$0</p>
+      </div>
+      
+      <p id="error">One or more fields are blank/invalid.</p>
+      <button id="bookflight">Submit and Book</button>
     </div>
 
   </div>

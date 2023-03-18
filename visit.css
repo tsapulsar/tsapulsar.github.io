@@ -12,7 +12,7 @@ body {
     text-align: center;
 }
 
-#disclaimer {
+#disclaimer, #disclaimer1 {
     font-size: 25px;
     text-align: center;
     color: white;
@@ -70,6 +70,7 @@ body {
     }
     #title {
         font-size: 100px;
+        border-width: 10px;
     }
     #sub {
         font-size: 40px;
@@ -77,10 +78,13 @@ body {
         padding-right: 50px;
     }
 
-    #disclaimer {
+    #disclaimer, #disclaimer1 {
         font-size: 30px;
         width: 900px;
         margin-top: 100px;
+    }
+    #disclaimer1 {
+        margin-top: -150px;
     }
 
     #section {
@@ -89,8 +93,9 @@ body {
     }
 
     #header { 
-        border-left: 6px solid var(--second);
-        border-top: 6px solid var(--second);
+        border-left: 10px solid var(--second);
+        border-top: 10px solid var(--second);
+        padding-top: 50px;
         color: white;
      }
 

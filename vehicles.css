@@ -191,6 +191,7 @@ body {
     }
     #header {
         font-size: 100px;
+        border-width: 10px;
     }
     #subheader {
         font-size: 35px;

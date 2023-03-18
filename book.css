@@ -12,7 +12,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    
     text-align: center;
     margin-top: 150px;
     text-transform: uppercase;
@@ -40,35 +39,63 @@ body {
     align-items: center;
     flex-direction: column;
     margin-right: 1300px;
-    top: 200px;
+    top: 150px;
+    transition: 0.3s;
+    z-index: 100;
 }
-#m1, #m2, #m3 {
+#m1, #m2, #m3, #m4 {
     color: var(--third);
     font-weight: 600;
     font-size: 20px;
+    transition: 0.3s;
 }
-#line, #line1 {
+#m1:hover, #m2:hover, #m3:hover, #m4:hover {
+    color: var(--second);
+    cursor: pointer;
+}
+
+
+#line, #linex, #liney, #line1 {
     height: 100px;
     border: 2px solid white;
     width: 0;
     border-radius: 100px;
     margin-top: -15px;
     margin-bottom: -15px;
+    transition: 0.3s;
 }
 #line1 {
     height: 50px;
 }
 
-#buttons {
+#buttons, #buttons2 {
     display: flex;
     flex-direction: row;
 }
+#buttons2 {
+    margin-top: 15px;
+}
 
+#followup {
+    margin-top: 50px;
+    border-left: 5px solid var(--third);
+    padding-bottom: 50px;
+    padding-left: 50px;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    transition: 0.3s;
+}
 #roomsec, #datesec, #addresssec, #experiencesec, #rewardssec {
     width: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
+}
+
+#rewardssec {
+    margin-top: -100px;
 }
 
 #roomsec {
@@ -109,7 +136,7 @@ body {
 
 }
 
-#roomselect1, #roomselect2, #bookflight, #button1, #button2 {
+#roomselect1, #roomselect2, #bookflight, #button1, #button2, #button3, #button4 {
     width: 150px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -124,23 +151,29 @@ body {
     background: var(--mainhover);
     transition: 0.3s;
 }
-
-#bookflight {
-    width: 200px;
-    margin-top: 100px;
+#error {
+    color: var(--error);
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.3s;
 }
-#button1, #button2 {
+#bookflight {
+    width: 220px;
+    margin-top: 20px;
+}
+#button1, #button2, #button3, #button4 {
     width: 100px;
     font-size: 15px;
     margin-right: 50px;
 }
-#roomselect1:hover, #roomselect2:hover, #bookflight:hover, #button1:hover, #button2:hover {
+#roomselect1:hover, #roomselect2:hover, #bookflight:hover, #button1:hover, #button2:hover, #button3:hover, #button4:hover {
     transform: scale(1.1);
     color: var(--third);
     cursor: pointer;
 }
 
-#datehead, #experiencehead, #rewardshead {
+#datehead, #datehead1, #experiencehead, #rewardshead {
     font-size: 35px;
     font-family: "Poppins";
     color: white;
@@ -164,9 +197,27 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
-#start, #street, #city, #state {
+#street, #city, #state, #first, #last, #numtickets, #cardnum, #cvv, #exdate, #zip {
     background: Var(--main);
-   width: 400px; 
+    width: 400px; 
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid var(--third);
+    border-right: 5px solid var(--third);
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+}
+#zip {
+    width: 100px;
+    text-align: center;
+}
+#start {
+    background: Var(--main);
+    width: 400px; 
     font-family: "Poppins";
     font-weight: 600;
     font-size: 20px;
@@ -175,13 +226,10 @@ body {
     border-bottom: 5px solid var(--third);
     border-right: 5px solid var(--third);
 }
-#street, #city, #state {
-    padding: 10px;
-    color: white;
-    font-size: 17px;
-}
-#state {
-    width: 100px;
+
+#state, #numtickets, #cvv {
+    width: 50px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -201,30 +249,205 @@ body {
 ::-webkit-inner-spin-button { display: none; }
 ::-webkit-calendar-picker-indicator { padding-right: 15px; }
 
+#total {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    text-align: left;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+#numtotal {
+    margin-left: 15px;
+    color: var(--second);
+}
+#bed1, #bed2 {
+    transition: 0.3s;
+}
+
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#choice1, #choice2, #choice3 {
+    background: linear-gradient(rgb(12, 24, 47), rgb(25, 42, 73)), url();
+    border-bottom: 6px solid var(--second);
+    border-right: 6px solid var(--second);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    transition: 0.4s;
+}
+#choice1:hover, #choice2:hover, #choice3:hover {
+    transform: scale(1.1);
+}
+#price {
+    font-size: 40px;
+    color: var(--third);
+    font-weight: 700;
+}
+
+#details {
+    color: white;
+    margin-bottom: 30px;
+}
+
+#t1, #t2, #t3 {
+    padding-left: 25px;
+    background: transparent;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-top: 3px solid var(--second);
+    border-left: 3px solid var(--second);
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Poppins";
+    transition: 0.2s;
+}
+
+#t1:hover, #t2:hover, #t3:hover{
+    color: var(--third);
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid var(--second);
+    border-right: 3px solid var(--second);
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 1024px) {
 
-
     #pagetitle {
-        margin-top: 300px;
+        margin-top: 350px;
+        font-size: 100px;
+        border-width: 10px;
+        width: 80%;
     }
-
-    #buttons, #beds {
+    #roomsec, #datesec, #addresssec, #experiencesec, #rewardssec, #choices, #total {
+        width: 80%;
+        margin-left: -500px;
         display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #rewardssec {
+        margin-top: -150px;
+    }
+    #rewardshead, #experiencehead, #datehead, #datehead1 {
+        font-size: 60px;
+        width: 100%;
+        margin-top: 150px;
+    }
+    #buttons {
+        width: 100%;
+    }
+    #button1, #button2, #button3, #button4, #roomselect1, #roomselect2 {
+        width: 250px;
+        height: 150px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    #disclaimer {
+        font-size: 35px;
+    }
+    #beds {
         flex-direction: column;
     }
-
-    #button1, #button2, #bed1, #bed2 {
-        margin-bottom: 50px;
+    #roomimage, #roomimage1 {
+        width: 90%;
     }
-
     #bed1, #bed2 {
-        padding-left: 0px;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+    #roomtitle {
+        font-size: 40px;
+    }
+    #titlewhole {
+        font-size: 40px;
+    }
+    #street, #start, #city, #state, #first, #last, #numtickets, #cardnum, #cvv, #exdate, #zip {
+        height: 70px;
+        width: 80%;
+        font-size: 35px;
+    }
+    #state, #cvv, #numtickets {
+        width: 200px;
     }
 
 
+    #choices {
+        margin-top: 200px;
+    }
 
+    #choice1, #choice2, #choice3 {
+        border-right: 10px solid var(--second);
+        border-bottom: 10px solid var(--second);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 600px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 200px;
+        margin-top: -100px;
+        padding-bottom: 200px;
+    }
+
+    #price {
+        font-size: 100px;
+    }
+
+    #details {
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+
+    #t1, #t2, #t3 {
+        font-size: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #total {
+        flex-direction: row;
+        font-size: 50px;
+        margin-top: -100px;
+    }
+    #bookflight, #error {
+        margin-left: -500px;
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
+    #bookflight {
+        margin-top: 0px;
+        width: 500px;
+        height: 150px;
+    }
 }
 
 

@@ -9,18 +9,24 @@
 
         window.scrollTo(0, 0);
         div.parentNode.removeChild(div);
+        var openm = false;
 
+        let width = window.screen.width;
+        
         document.getElementById("paget").style = "width:0";
         document.getElementById("pagettext").style = "opacity: 0;";
         document.getElementById("loadcircle").style = "opacity: 0;";
 
+        if (width < 1024) {
+            document.getElementById("followmouse").style = "display: none";
+        }
         const blob = document.getElementById("followmouse");
 
         window.onpointermove = event => { 
             const { clientX, clientY } = event;
             blob.animate({
-                left: `${clientX - 15}px`,
-                top: `${clientY + window.scrollY -25}px`
+                left: `${clientX + 0}px`,
+                top: `${clientY + 0}px`
             }, { duration: 400, fill: "forwards" });
         }
         setInterval(() => {
@@ -34,24 +40,25 @@
         let headerMain = `
         <nav>
             <div id="menu">
-            <div id="menucontent">
-                <p><p id="username">PULSAR</p></p>
-                <button id="menubutton" onclick="openmenu()">></button>
-            </div>
-            <div id="header-main">
-                <p class="menu-link" id="homeb">Home</p>
-                <p class="menu-link" id="aboutb">About</p>
-                <p class="menu-link" id="travelb">Travel</p>
-                <p class="menu-link" id="safetyb">Safety</p>
-                <p class="menu-link" id="vehiclesb">Vehicles</p>
-                <p class="menu-link" id="visitb">Visit</p>
-                <p class="menu-link" id="refb">References</p>
-                <p class="menu-link" id="contactlink">Contact</p>
-            </div>
-            <div id="menu-right">
-                <a id="rightbutton1">Book</a>
-                <a id="rightbutton2">Login</a>
-            </div>
+                <div id="menucontent">
+                    <p><p id="username">PULSAR</p></p>
+                    <button id="menubutton" onclick="openmenu()">></button>
+                </div>
+                <div id="header-main">
+                    <p class="menu-link" id="homeb">Home</p>
+                    <p class="menu-link" id="aboutb">About</p>
+                    <p class="menu-link" id="travelb">Travel</p>
+                    <p class="menu-link" id="safetyb">Safety</p>
+                    <p class="menu-link" id="vehiclesb">Vehicles</p>
+                    <p class="menu-link" id="visitb">Visit</p>
+                    <p class="menu-link" id="refb">References</p>
+                    <p class="menu-link" id="contactlink" onclick="contactScroll()">Contact</p>
+                    
+                    <div id="menu-right">
+                        <a id="rightbutton1">Book</a>
+                        <a id="rightbutton2">Login</a>
+                    </div>
+                </div>
                 <script async src="universal.js"></script> 
             </div>
         </nav>
@@ -136,33 +143,11 @@
     `;
     document.getElementById("footer-main").innerHTML = footerMain;
 
-    
-    document.getElementById("contactlink").onmouseover = function() {
-        document.getElementById("contactlink").style.cursor = "pointer";
-    }
-    document.getElementById("contactlink").onclick = function() {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-        if (width < 1024 && openm == true) {
-            openm = false;
-            document.getElementById("menubutton").style.transform = "rotate(90deg)";
-            document.getElementById("menu").style.height = "180px";
-        }
-    }
+
   }
   
 })();
 
-let width = window.screen.width;
-if (width > 1024) {
-    setInterval(function () {
-    if (window.scrollY <= 100) {
-        document.getElementById("menu").style = "background-color: transparent";
-    }
-    else {
-        document.getElementById("menu").style = "background-color: rgb(31, 40, 65)";
-    }
-}, 10)
-}
 
 function wait(ms){
     var start = new Date().getTime();
@@ -173,7 +158,7 @@ function wait(ms){
  }
 
 var animateSpeed = 300;
-
+var width = window.screen.width;
 /*menu*/
 var openm = false;
 function openmenu() {
@@ -188,7 +173,16 @@ function openmenu() {
         document.getElementById("menubutton").style.transform = "rotate(90deg)";
     }
 }
-
+if (width > 1024) {
+    setInterval(function () {
+    if (window.scrollY <= 100) {
+        document.getElementById("menu").style = "background-color: transparent";
+    }
+    else {
+        document.getElementById("menu").style = "background-color: rgb(31, 40, 65)";
+    }
+}, 10)
+}
 setInterval(function() {
     let width = window.screen.width;
     if (width < 1024 && openm == true) {
@@ -200,3 +194,13 @@ setInterval(function() {
     }
 
 }, 10);
+
+function contactScroll() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+    if (width < 1024) {
+        document.getElementById("menu").style.height = "180px";
+        openm = false;
+        document.getElementById("menubutton").style.transform = "rotate(90deg)";
+    }
+    
+}
