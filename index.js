@@ -28,6 +28,10 @@ document.getElementById("vehiclebutton").onmousedown = function(){
   pagetrans();
   setTimeout(function(){ window.location.href = "./vehicles.html"; }, animateSpeed);
 };
+document.getElementById("bookbutton1").onmousedown = function(){
+  pagetrans();
+  setTimeout(function(){ window.location.href = "./book.html"; }, animateSpeed);
+};
 
 document.getElementById("ahead1").onmousedown = function(){
   pagetrans();

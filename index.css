@@ -43,7 +43,7 @@
     text-transform: uppercase;
 }
 #subtitle {
-    color: var(--second);
+    color: var(--third);
     text-transform: uppercase;
     font-weight: 500;
     font-size: 30px;
@@ -60,13 +60,13 @@
     height: 150px;
 }
 #box1 {
-    border-top: 4px solid var(--third);
-    border-left: 4px solid var(--third);
+    border-top: 4px solid var(--second);
+    border-left: 4px solid var(--second);
     margin-right: 600px;
 }
 #box2 {
-    border-bottom: 4px solid var(--third);
-    border-right: 4px solid var(--third);
+    border-bottom: 4px solid var(--second);
+    border-right: 4px solid var(--second);
     margin-top: 00px;
     margin-left: 600px;
 }
@@ -233,9 +233,13 @@
     color: white;
     cursor: pointer;
 }
-#arrow {
+#arrow, #arrow2 {
     color: white;
     margin-right: 10px;
+}
+#arrow2 {
+    margin-right: 0;
+    margin-left: 10px;
 }
 
 #vehiclesec {
@@ -272,7 +276,7 @@
     font-weight: 600;
 }
 
-#vehiclebutton {
+#vehiclebutton, #bookbutton1 {
     display: flex;
     align-items: center;
     color: var(--third);
@@ -284,9 +288,19 @@
     transition: 0.2s;
 }
 
+#bookbutton1 {
+    margin-top: -50px;
+    color: white;
+}
+
 #vehiclebutton:hover {
     margin-left: 20px;
     color: white;
+    cursor: pointer;
+}
+#bookbutton1:hover {
+    margin-top: -40px;
+    color: var(--third);
     cursor: pointer;
 }
 
@@ -485,6 +499,9 @@
     #bgtitle {
         font-size: 180px;
     }
+    #bookbutton1 {
+        margin-top: 50px;
+    }
     #subtitle {
         font-size: 55px;
         margin-top: -200px;
@@ -595,7 +612,7 @@
         font-size: 50px;
     }
 
-    #vehiclebutton {
+    #vehiclebutton, #bookbutton1  {
         font-size: 75px;
     }
 

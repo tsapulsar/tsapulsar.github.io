@@ -42,6 +42,7 @@ body {
 }
 
 #followmouse {
+    display: none;
     width: 20px;
     height: 20px;
     position: fixed;
@@ -170,6 +171,7 @@ body {
 	border-bottom: 3px solid transparent;
 	pointer-events: all;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .menu-link:hover {
 	color: var(--second);

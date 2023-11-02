@@ -128,7 +128,7 @@ document.getElementById("foodheader").onmousedown = function(){
         c5++;
     }
 };
-var date = new Date('06/22/2023 12:00 AM');
+var date = new Date('06/22/2024 12:00 AM');
         
 var _second = 1000;
 var _minute = _second * 60;
